@@ -122,6 +122,23 @@ body {
     top: 10%;
 }
 
+.cart-box .col-1 img {
+    width: 100px;
+    height: 100px;
+}
+
+.cart-remove {
+    font-size: 50px;
+}
+
+.cart-box {
+    font-size: 30px;
+}
+
+.plus,.minus {
+    padding: 30px;
+}
+
 .hero {
     background: url(../public/hero4.png) no-repeat;
     background-size: cover;
