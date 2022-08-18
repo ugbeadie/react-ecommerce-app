@@ -1,10 +1,8 @@
 import React from 'react'
-import HeroImg from './assets/hero/hero4.png'
 
 const Hero = () => {
   return (
     <div className='hero'>
-        <img className='hero-img' src={HeroImg} alt='/' />
         <div className="hero-content">
             <div>
                 <h3>Men Collection 2022</h3>

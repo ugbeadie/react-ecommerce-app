@@ -55,7 +55,9 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className='nav-right'>
-                <FaShoppingCart size={20}/>                
+            <NavLink to="/cart">
+                <FaShoppingCart size={20} style={{color: '#333'}}/>  
+            </NavLink>              
             </div>            
         </nav>
   )
