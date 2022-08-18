@@ -9,7 +9,7 @@ const navStyle = {
     color: '#333'
 }
 
-const Navbar = () => {
+const Navbar = ({cart,setCart}) => {
 
     const [nav, setNav] = useState(false)
 

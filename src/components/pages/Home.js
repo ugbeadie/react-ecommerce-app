@@ -3,12 +3,12 @@ import Hero from '../Hero'
 import Categories from '../Categories'
 import Products from '../Products'
 
-const Home = () => {
+const Home = ({cart,setCart}) => {
   return (
     <div>
       <Hero/>
       <Categories/> 
-      <Products/>    
+      <Products cart={cart} setCart={setCart}/>    
     </div>
   )
 }
