@@ -10,7 +10,8 @@ const Data = [
     name: 'Simpson Sweatshirt',
     price: '$315.00',
     imageFront: `${ImageFront1}`,
-    imageBack: `${ImageBack1}` 
+    imageBack: `${ImageBack1}`,
+    count: 1 
     },
     {
     id: 2,
@@ -18,7 +19,8 @@ const Data = [
     name: 'Short Denim Dungarees',
     price: '$255.00',
     imageFront: `${ImageFront2}`,
-    imageBack: `${ImageBack2}` 
+    imageBack: `${ImageBack2}`,
+    count: 1
     },
 ]
 
