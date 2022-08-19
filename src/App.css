@@ -582,9 +582,7 @@ figure {
         top: 0;
     }
     .hot {
-        position: absolute;
-        top: 12%;
-        left: 25%;
+        display: none;
     }
     .cart {
         padding: 0 50px;
@@ -670,11 +668,6 @@ figure {
     }
     .logo {
         font-size: 25px;
-    }
-    .hot {
-        position: absolute;
-        top: 12%;
-        left: 20%;
     }
     .cart {
         padding: 0 20px;
