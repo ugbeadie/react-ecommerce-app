@@ -297,7 +297,6 @@ hr {
 }
 
 .hero {
-    display: none;
     background: url(../public/hero4.png) no-repeat;
     background-size: cover;
     background-position: center;
@@ -361,7 +360,6 @@ hr {
 }
 
 .category-imgs img {
-    display: none;
     max-width: 100%;
     transform: scale(1);
     transition: all 0.4s ease-in;
@@ -611,8 +609,6 @@ figure {
     .mobile {
         width: 100%;
         display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
     }
     .col-2,.col-3,.col-4 {
