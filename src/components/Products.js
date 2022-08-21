@@ -1,5 +1,6 @@
 import React from 'react'
 import products from './Data'
+import { Link } from "react-router-dom";
 
 const Products = ({cart,setCart}) => {
 
@@ -20,12 +21,14 @@ const Products = ({cart,setCart}) => {
             {products.map((product) => (
             <div key={product.id} className='a-prod-img'>
                 <figure key={product.id}>
+                  <Link to={`${product.id}`}>
                   <img className='img-back' src={product.imageBack} alt={product.name}/>
                   <img className='img-front' src={product.imageFront} alt={product.name}/>
+                  </Link>
                 </figure>
                 <div class="a-prod-info">
                   <div class="brand">{product.brand}</div>
-                  <div class="name">{product.name}</div>                      
+                  <div class="name">{product.name}</div>                                       
                   <div class="price">{product.price}</div>                        
                   <button class="add-to-cart"
                   onClick={() => handleAddToCart(product)}>

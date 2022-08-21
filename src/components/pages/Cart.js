@@ -73,10 +73,10 @@ const Cart = ({cart,setCart}) => {
             <div className='col-3 desktop'>
               <div className='quantity-wrapper'>
                 <button onClick={() => handleChange(item, -1)}
-              className='minus'>-</button>
-              <input className='item-count' type='number' value={item.count}/>
-              <button onClick={() => handleChange(item, 1)}
-              className='plus'>+</button>
+                className='minus'>-</button>
+                <input className='item-count' type='number' value={item.count}/>
+                <button onClick={() => handleChange(item, 1)}
+                className='plus'>+</button>
               </div>
             </div>        
             

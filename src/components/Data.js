@@ -15,7 +15,7 @@ import ImageBack7 from "./assets/footwears/4138332107_2_1_1_490x.progressive.jpg
 import ImageFront8 from "./assets/men/1271613811_1_1_1_490x.progressive.jpg"
 import ImageBack8 from "./assets/men/1271613811_2_1_1_490x.progressive.jpg"
 
-const Data = [
+const products = [
     {
     id: 1,
     brand: 'Lacoste',
@@ -90,4 +90,4 @@ const Data = [
     },
 ]
 
-export default Data;
+export default products;
