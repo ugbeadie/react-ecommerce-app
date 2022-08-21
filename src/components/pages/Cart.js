@@ -74,7 +74,7 @@ const Cart = ({cart,setCart}) => {
               <div className='quantity-wrapper'>
                 <button onClick={() => handleChange(item, -1)}
               className='minus'>-</button>
-              <input className='item-count' type='text' value={item.count}/>
+              <input className='item-count' type='number' value={item.count}/>
               <button onClick={() => handleChange(item, 1)}
               className='plus'>+</button>
               </div>
@@ -92,7 +92,6 @@ const Cart = ({cart,setCart}) => {
               <div className='quantity-wrapper'>
                 <button onClick={() => handleChange(item, -1)}
               className='minus'>-</button>
-              <input className='item-count' type='text' value={item.count}/>
               <button onClick={() => handleChange(item, 1)}
               className='plus'>+</button>
               </div>
