@@ -808,6 +808,9 @@ figure {
         justify-content: center;
         align-items: center;
     }
+    .right .name {
+        text-align: center;
+    }
     .rating {
         display: flex;
         justify-content: space-between;
@@ -903,6 +906,12 @@ figure {
     }
     .single-prod-container {
         padding: 50px 20px;
+    }
+    .right .name {
+        font-size: 25px;
+    }
+    .desc {
+        font-size: 15px;
     }
 }
 
