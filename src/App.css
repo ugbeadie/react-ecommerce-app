@@ -364,11 +364,11 @@ hr {
 .category-imgs img {
     max-width: 100%;
     transform: scale(1);
-    transition: all 0.4s ease-in;
+    transition: all 0.5s ease-in;
 }
 
 .category-imgs:hover img {
-    transform: scale(1.15);
+    transform: scale(1.1);
 }
 
 figure {
@@ -532,6 +532,7 @@ figure {
 
 .price {
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -544,6 +545,10 @@ figure {
 .price span {
     font-size: 18px;
     font-weight: 500;
+}
+
+.a-prod-info {
+    text-align: center;
 }
 
 .a-prod-info button {
@@ -652,6 +657,7 @@ figure {
 
 .right .price {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     margin-top: 20px;
 }
@@ -757,7 +763,7 @@ figure {
 }
 
 .collection:hover img {
-    transform: scale(1.15);
+    transform: scale(1.11);
 }
 
 figure {
@@ -788,6 +794,7 @@ figure {
 
 .text h6 {
     font-size: 25px;
+    font-weight: 400;
 }
 
 .text span {
@@ -1035,7 +1042,7 @@ figure {
         vertical-align: middle;
         width: 30px;
         height: 2px;
-        background: var(--black);
+        background: var(--blue);
     }
     .product-head h3::after {
         content: "";
@@ -1043,7 +1050,7 @@ figure {
         vertical-align: middle;
         width: 30px;
         height: 2px;
-        background: var(--black);
+        background: var(--blue);
     }
     .product-imgs {
         display: flex;
