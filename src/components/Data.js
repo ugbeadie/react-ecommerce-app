@@ -20,9 +20,14 @@ const products = [
     id: 1,
     brand: 'Lacoste',
     name: 'Simpson Sweatshirt',
+    discount: '$450.00',
     price: '$315.00',
     imageFront: `${ImageFront1}`,
     imageBack: `${ImageBack1}`,
+    reviews: '12',
+    perk_one: 'New',
+    perk_two: '-30%',
+    save: 'you save: $135.00 (30%)',
     count: 1 
     },
     {
@@ -32,6 +37,7 @@ const products = [
     price: '$255.00',
     imageFront: `${ImageFront2}`,
     imageBack: `${ImageBack2}`,
+    reviews: '15',
     count: 1
     },
     {
@@ -41,6 +47,7 @@ const products = [
     price: '$410.00',
     imageFront: `${ImageFront3}`,
     imageBack: `${ImageBack3}`,
+    reviews: '10',
     count: 1
     },
     {
@@ -50,6 +57,7 @@ const products = [
     price: '$165.00',
     imageFront: `${ImageFront4}`,
     imageBack: `${ImageBack4}`,
+    reviews: '12',
     count: 1
     },
     {
@@ -59,6 +67,7 @@ const products = [
     price: '$270.00',
     imageFront: `${ImageFront5}`,
     imageBack: `${ImageBack5}`,
+    reviews: '15',
     count: 1
     },
     {
@@ -68,6 +77,7 @@ const products = [
     price: '$295.00',
     imageFront: `${ImageFront6}`,
     imageBack: `${ImageBack6}`,
+    reviews: '14',
     count: 1
     },
     {
@@ -77,15 +87,17 @@ const products = [
     price: '$390.00',
     imageFront: `${ImageFront7}`,
     imageBack: `${ImageBack7}`,
+    reviews: '19',
     count: 1
     },
     {
     id: 8,
-    brand: 'Calvi Kelvin',
+    brand: 'Calvin Kelvin',
     name: 'Tailored Fit Men Polo Shirt',
     price: '$310.00',
     imageFront: `${ImageFront8}`,
     imageBack: `${ImageBack8}`,
+    reviews: '15',
     count: 1
     },
 ]

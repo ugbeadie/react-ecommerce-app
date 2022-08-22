@@ -19,9 +19,7 @@ const Navbar = ({cart,setCart}) => {
                 {nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20}/>}
             </div>
             <div className='nav-left'>
-                <div className='logo'>
-                <NavLink style={navStyle} to="/">ugbe<span>store</span></NavLink>
-                </div>
+                <div className='logo'>ugbe<span>store</span></div>
                 <ul className={nav ? 'nav-menu active' : 'nav-menu'}>
                     <li onClick={() => setNav(false)} className='nav-items'>                    
                     <NavLink to= "/"

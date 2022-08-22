@@ -7,7 +7,7 @@ const SingleProduct = ({handleAddToCart}) => {
 
   const { productId } = useParams();
   const product = products.find((product) => product.id == productId);
-  const { imageFront, name, price } = product;
+  const { imageFront, name, brand, discount, price, save, reviews } = product;
   return (
     <section className='single-product'>
       <div className='single-prod-container'>
@@ -20,14 +20,21 @@ const SingleProduct = ({handleAddToCart}) => {
         <div className='right'>
             <h6>Availability: <span>in stock</span></h6>
             <p class="name">{name}</p>
+            <p className='brand'>Brand: <span>{brand}</span></p>
             <div class="rating">
             <img src={rating} alt={name}/>
-                <p>(6 Reviews)</p>
+                <p>({reviews} Reviews)</p>
             </div>
-            <p class="price">{price}</p>
+            <div class="price">
+                <p>{discount}</p>
+                <span>{price}</span>
+            </div>
+            <p class="save">{save}</p>
             <p class="desc">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam.
+                Sed ut perspiciatis unde omnis iste natus 
+                error sit voluptatem accusantium doloremque 
+                laudantium, totam rem aperiam,
+                eaque ipsa quae ab illo inventore veritatis 
             </p>
             <div class="color">
                 <h5 class>color: <span>black</span></h5>

@@ -99,6 +99,7 @@ body {
 }
 
 .active {
+    border-bottom: 2px solid #6c7ae0;
     color: #6c7ae0;
 }
 
@@ -297,7 +298,6 @@ hr {
 }
 
 .hero {
-    display: none;
     background: url(../public/hero4.png) no-repeat;
     background-size: cover;
     background-position: center;
@@ -352,16 +352,16 @@ hr {
 }
 
 .categories {
+    position: relative;
     max-width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
     padding: 30px 70px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .category-imgs img {
-    display: none;
     max-width: 100%;
     transform: scale(1);
     transition: all 0.4s ease-in;
@@ -388,14 +388,16 @@ figure {
     position: absolute;
     bottom: 10%;
     background-color: white;
+    text-transform: uppercase;
     padding: 10px 30px;
-    border-radius: 5px;
+    border-radius: 3px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     transition: 0.3s ease-in;
 }
 
-.category-text:hover {
+.category-imgs:hover .category-text {
     background-color: var(--blue);
+    color: white;
 }
 
 .product-container {
@@ -431,7 +433,7 @@ figure {
     vertical-align: middle;
     width: 60px;
     height: 2px;
-    background: var(--black);
+    background: var(--blue);
 }
 
 .product-head h3::after {
@@ -440,7 +442,7 @@ figure {
     vertical-align: middle;
     width: 60px;
     height: 2px;
-    background: black;
+    background: var(--blue);
 }
 
 .product-head p {
@@ -490,6 +492,32 @@ figure {
     transform: scale(1.15);
 }
 
+.perks {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.perks .one {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+    color: white;
+    background-color: var(--blue);
+    padding: 0;
+}
+
+.perks .two {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+    background-color: rgb(216, 86, 86);
+    margin-top: 5px;
+}
+
 .brand {
     color: var(--gray);
     font-size: 12px;
@@ -503,6 +531,17 @@ figure {
 }
 
 .price {
+    display: flex;
+    align-items: center;
+}
+
+.price p {
+    text-decoration: line-through;
+    color: var(--gray);
+    font-weight: 300px;
+}
+
+.price span {
     font-size: 18px;
     font-weight: 500;
 }
@@ -512,7 +551,7 @@ figure {
     position: relative;
     margin-top: 15px;
     background-color: white;
-    border: 1px solid var(--black);
+    border: 1px solid var(--blue);
     padding: 8px 30px;
     transition: 0.3s;
     z-index: 1;
@@ -530,7 +569,7 @@ figure {
     z-index: -1;
     transform: scaleX(0);
     transform-origin: left;
-    background-color: var(--black);
+    background-color: var(--blue);
     transition: 0.2s all ease-in-out;
 }
 
@@ -567,18 +606,32 @@ figure {
 }
 
 .right h6 {
-    font-size: 15px;
-    font-weight: 500;
-}
-
-.right h6 span {
     color: var(--gray);
+    font-size: 15px;
     font-weight: 300;
 }
 
+.right h6 span {
+    color: var(--black);
+    font-weight: 500;
+}
+
 .right .name {
-    font-size: 30px;
+    text-transform: uppercase;
+    font-size: 28px;
     margin-top: 15px;
+}
+
+.right .brand {
+    color: var(--gray);
+    font-size: 15px;
+    font-weight: 300;
+    margin: -5px 0 15px 0;
+}
+
+.right .brand span {
+    color: var(--black);
+    font-weight: 500;
 }
 
 .rating {
@@ -593,22 +646,30 @@ figure {
 .rating p {
     font-size: 15px;
     font-weight: 300;
-    color: var(--gray);
+    /* color: var(--gray); */
     margin-left: 10px;
 }
 
 .right .price {
     display: flex;
     align-items: center;
-    font-size: 25px;
-    font-weight: 500;
     margin-top: 20px;
 }
 
+.right .price span {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.save {
+    color: rgb(216, 86, 86);
+    font-size: 14px;
+    /* font-weight: 300; */
+}
+
 .desc {
-    font-size: 18px;
-    font-weight: 300;
-    margin-top: 10px;
+    font-size: 16px;
+    margin-top: 15px;
     line-height: 1.4;
 }
 
@@ -662,6 +723,77 @@ figure {
     transform: scaleX(1);
 }
 
+.collection-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 100px 20px 50px 20px;
+}
+
+.collection {
+    width: 100%;
+    position: relative;
+}
+
+.collection a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.collection .zoom {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.collection img {
+    width: 100%;
+    transform: scale(1);
+    transition: all 0.5s ease-in;
+}
+
+.collection:hover img {
+    transform: scale(1.15);
+}
+
+figure {
+    overflow: hidden;
+    width: 100%;
+}
+
+.collection .text {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 27px;
+    border-radius: 6px;
+    text-align: center;
+    transition: all 0.3s ease-in;
+}
+
+.collection:hover .text {
+    padding: 35px;
+}
+
+.text p {
+    font-size: 16px;
+}
+
+.text h6 {
+    font-size: 25px;
+}
+
+.text span {
+    color: var(--blue);
+}
+
 @media screen and (max-width:1000px) {
     .categories {
         grid-template-columns: repeat(2, 1fr);
@@ -676,7 +808,7 @@ figure {
     .product-container {
         padding: 20px 50px;
     }
-    .product-imgs {
+    .product-imgs, .collection-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
@@ -827,6 +959,22 @@ figure {
     .cta button {
         margin-top: 20px;
     }
+    .collection .text {
+        padding: 15px;
+        border-radius: 6px;
+        text-align: center;
+        transition: all 0.3s ease-in;
+    }
+
+    .collection:hover .text {
+        padding: 20px;
+    }
+    .text p {
+        font-size: 14px;
+    }
+    .text h6 {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width:500px) {
@@ -862,7 +1010,7 @@ figure {
     }
     .categories {
         grid-template-columns: repeat(1, 1fr);
-        padding: 30px 20px;
+        padding: 30px 0;
     }
     .category-imgs {
         width: 100%;
@@ -910,8 +1058,22 @@ figure {
     .right .name {
         font-size: 25px;
     }
+    .price {
+        display: flex;
+        justify-content: center;
+    }
     .desc {
         font-size: 15px;
+    }
+    .collection-container {
+        width: 100%;
+        display: grid;
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0 30px 0;
+    }
+    .collection img {
+        width: 100%;
     }
 }
 
