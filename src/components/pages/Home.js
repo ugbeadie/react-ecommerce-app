@@ -3,6 +3,7 @@ import Hero from '../Hero'
 import Categories from '../Categories'
 import Products from '../Products'
 import Collection from '../Collection'
+import MiniBlog from '../MiniBlog'
 
 const Home = ({cart,setCart}) => {
   return (
@@ -11,6 +12,7 @@ const Home = ({cart,setCart}) => {
       <Categories/> 
       <Products cart={cart} setCart={setCart}/>  
       <Collection/>  
+      <MiniBlog/>
     </div>
   )
 }

@@ -407,7 +407,8 @@ figure {
     padding: 20px 70px;
 }
 
-.product-head {
+.product-head, .collection-head,
+.blog-head {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -415,7 +416,8 @@ figure {
     align-items: center;
 }
 
-.product-head h3 {
+.product-head h3, .collection-head h3,
+.blog-head h3 {
     color: var(--black);
     font-size: 25px;
     display: flex;
@@ -423,11 +425,13 @@ figure {
     align-items: center;
 }
 
-.product-head h3 span {
+.product-head h3 span, .collection-head h3 span,
+.blog-head h3 span {
     margin: 0 30px
 }
 
-.product-head h3::before {
+.product-head h3::before, .collection-head h3::before, 
+.blog-head h3::before {
     content: "";
     display: inline-block;
     vertical-align: middle;
@@ -436,7 +440,8 @@ figure {
     background: var(--blue);
 }
 
-.product-head h3::after {
+.product-head h3::after, .collection-head h3::after, 
+.blog-head h3::after {
     content: "";
     display: inline-block;
     vertical-align: middle;
@@ -445,7 +450,8 @@ figure {
     background: var(--blue);
 }
 
-.product-head p {
+.product-head p, .collection-head p, 
+.blog-head p {
     font-family: 'Playfair Display', serif;
     color: var(--gray);
 }
@@ -717,7 +723,6 @@ figure {
 .save {
     color: rgb(216, 86, 86);
     font-size: 14px;
-    /* font-weight: 300; */
 }
 
 .desc {
@@ -777,11 +782,29 @@ figure {
 }
 
 .collection-container {
+    padding: 50px 20px 0 20px;
+}
+
+.text p {
+    font-size: 16px;
+}
+
+.text h6 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.text span {
+    color: var(--blue);
+}
+
+
+.collections {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-    padding: 100px 20px 50px 20px;
+    padding-top: 50px;
 }
 
 .collection {
@@ -835,18 +858,93 @@ figure {
     padding: 35px;
 }
 
-.text p {
-    font-size: 16px;
+.blog-container {
+    padding: 70px;
 }
 
-.text h6 {
-    font-size: 25px;
-    font-weight: 400;
+.blog-imgs {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding-top: 50px;
 }
+    
+    .blog-img {
+        width: 100%;
+        position: relative;
+    }
 
-.text span {
-    color: var(--blue);
-}
+    .blog-img img {
+        width: 100%;
+    }
+        
+    .blog-img .blog-text {        
+        position: relative;
+        padding: 22px 15px 10px;
+        margin: -70px 20px 0 20px;
+        background-color: white;
+        border-radius: 6px;
+        text-align: center;
+        transition: all 0.3s ease-in;
+    }
+    
+    .blog-img:hover .blog-text {
+        margin: 0 10px;
+        margin: -80px 10px 0 10px;
+    }
+
+        .blog-text .name {
+            color: var(--blue);
+            font-weight: 400;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    
+        .blog-text .title {
+            font-weight: 400;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: 0.2s ease-in;
+        }
+    
+        .blog-text .title:hover {
+            color: var(--blue);
+        }
+    
+        .blog-text .desc {
+            font-weight: 300;
+            color: var(--gray);
+            font-size: 13px;
+            margin-top: 18px;
+        }
+    
+        .author_comment {
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 14px;
+            color: var(--gray);
+            font-size: 12px;
+            font-weight: 300;
+            margin-top: 18px;
+        }
+    
+        .author_comment p span {
+            color: var(--black);
+            font-weight: 400;
+        }
+    
+        .comment {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--black);
+            font-weight: 400;
+        }
+    
+        .comment p {
+            margin-left: 5px;
+        }
 
 @media screen and (max-width:1000px) {
     .categories {
@@ -862,7 +960,7 @@ figure {
     .product-container {
         padding: 20px 50px;
     }
-    .product-imgs, .collection-container {
+    .product-imgs, .collections, .blog-imgs {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1029,6 +1127,12 @@ figure {
     .text h6 {
         font-size: 20px;
     }
+    .blog-head {
+        text-align: center;
+    }
+    .blog-container {
+        padding: 80px 40px;
+    }
 }
 
 @media screen and (max-width:500px) {
@@ -1077,13 +1181,21 @@ figure {
     .product-container {
         padding: 20px;
     }
-    .product-head p {
+    .product-head, .collection-head, 
+    .blog-head {
+        text-align: center;
+    }
+    .product-head p, .collection-head p,
+    .blog-head p {
         font-size: 18px;
     }
-    .product-head h3 span {
+    .product-head h3 span,
+    .collection-head p span,
+    .blog-head p span {
         margin: 0 10px
     }
-    .product-head h3::before {
+    .product-head h3::before, .collection-head h3::before,
+    .blog-head h3::before {
         content: "";
         display: inline-block;
         vertical-align: middle;
@@ -1091,7 +1203,8 @@ figure {
         height: 2px;
         background: var(--blue);
     }
-    .product-head h3::after {
+    .product-head h3::after, .collection-head h3::after,
+    .blog-head h3::after {
         content: "";
         display: inline-block;
         vertical-align: middle;
@@ -1120,6 +1233,9 @@ figure {
         font-size: 15px;
     }
     .collection-container {
+        padding: 50px 0 0 0;
+    }
+    .collections {
         width: 100%;
         display: grid;
         display: flex;
@@ -1128,6 +1244,16 @@ figure {
     }
     .collection img {
         width: 100%;
+    }
+    .blog-imgs {
+        display: flex;
+        flex-direction: column;
+    }
+    .blog-img {
+        padding-bottom: 20px;
+    }
+    .blog-container {
+        padding: 50px 0;
     }
 }
 
