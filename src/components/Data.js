@@ -15,6 +15,8 @@ import ImageBack7 from "./assets/footwears/4138332107_2_1_1_490x.progressive.jpg
 import ImageFront8 from "./assets/men/1271613811_1_1_1_490x.progressive.jpg"
 import ImageBack8 from "./assets/men/1271613811_2_1_1_490x.progressive.jpg"
 
+//todo - add an instock feature
+
 const products = [
     {
     id: 1,

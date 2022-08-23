@@ -461,6 +461,7 @@ figure {
 
 .a-prod-img {
     width: 100%;
+    position: relative;
 }
 
 .a-prod-img img {
@@ -489,7 +490,7 @@ figure {
 }
 
 .img-front:hover {
-    transform: scale(1.15);
+    transform: scale(1.1);
 }
 
 .perks {
@@ -549,6 +550,7 @@ figure {
 
 .a-prod-info {
     text-align: center;
+    /* position: relative; */
 }
 
 .a-prod-info button {
@@ -584,6 +586,31 @@ figure {
 
 .a-prod-info button:hover::before {
     transform: scaleX(1);
+}
+
+.overlay {
+    position: absolute;
+    top: 65%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.2s ease-in;
+}
+
+.a-prod-img .overlay button {
+    transform: translateY(20px);
+    transition: 0.2s ease-in;
+}
+
+.a-prod-img:hover .overlay {
+    opacity: 1;
+}
+
+.a-prod-img:hover .overlay button {
+    transform: translateY(0);
 }
 
 /* .single-product {

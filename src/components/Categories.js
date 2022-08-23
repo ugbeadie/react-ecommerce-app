@@ -34,12 +34,12 @@ const Categories = () => {
     {categories.map((category) => {
         return (
         <div key={category.id} className='category-imgs'>
-        <div className='zoom-in'>
-            <figure>
-                <img src={category.image} alt={category.name}/>
-            </figure>
-            <p className='category-text'>{category.name}</p>
-        </div>            
+            <div className='zoom-in'>
+                <figure>
+                    <img src={category.image} alt={category.name}/>
+                </figure>
+                <p className='category-text'>{category.name}</p>
+            </div>            
         </div>
     )})}
     </div>

@@ -36,10 +36,12 @@ const Products = ({cart,setCart}) => {
                   <div class="price">
                     <p>{product.discount}</p>
                     <span>{product.price}</span>
-                  </div>                        
-                  <button class="add-to-cart"
-                  onClick={() => handleAddToCart(product)}>
-                  ADD TO CART</button>
+                  </div>   
+                  <div className='overlay'>
+                      <button class="add-to-cart"
+                    onClick={() => handleAddToCart(product)}>
+                    ADD TO CART</button>
+                  </div>                     
                 </div>
               </div>
             ))}
