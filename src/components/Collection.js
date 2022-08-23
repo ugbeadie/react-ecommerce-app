@@ -7,8 +7,13 @@ import { Link } from "react-router-dom";
 const Collection = () => {
   return (
     <div className='collection-container'>
-        <div className='collection'>
-        <Link to="/shop">
+        <div class="collection-head">
+            <h3><span>SPEED SALES</span></h3>
+            <p>Hurry and grab yours</p>
+        </div>
+        <div className='collections'>
+            <div className='collection'>
+            <Link to="/shop">
             <div className='zoom'>
                 <figure>
                     <img src={autumn} alt='autumn'/>
@@ -18,36 +23,38 @@ const Collection = () => {
                     <h6>NEW ARRIVALS</h6>  
                 </div>
             </div>
-        </Link>
-        </div>
-
-        <div className='collection'>
-        <Link to="/shop">
-            <div className='zoom'>
-            <figure>
-                <img src={collection} alt='new collection'/>
-            </figure>
-                <div className='second text'>
-                    <p>NEW COLLECTION</p>
-                    <h6><span>STREETSTYLE</span></h6>
-                </div>
+            </Link>
             </div>
-        </Link>
+
+            <div className='collection'>
+            <Link to="/shop">
+                <div className='zoom'>
+                <figure>
+                    <img src={collection} alt='new collection'/>
+                </figure>
+                    <div className='second text'>
+                        <p>NEW COLLECTION</p>
+                        <h6><span>STREETSTYLE</span></h6>
+                    </div>
+                </div>
+            </Link>
+            </div>
+            
+            <div className='collection'>
+                <Link to="/shop">
+                <div className='zoom'>
+                    <figure>
+                        <img src={summer} alt='summer'/>
+                    </figure>
+                    <div className='third text'>
+                        <p>GREAT SUMMER SALES</p>
+                        <h6>GET UP <span>TO 70%</span></h6>
+                    </div>
+                </div>
+            </Link>
+            </div>
         </div>
         
-        <div className='collection'>
-            <Link to="/shop">
-            <div className='zoom'>
-                <figure>
-                    <img src={summer} alt='summer'/>
-                </figure>
-                <div className='third text'>
-                    <p>GREAT SUMMER SALES</p>
-                    <h6>GET UP <span>TO 70%</span></h6>
-                </div>
-            </div>
-        </Link>
-        </div>
     </div>
   )
 }

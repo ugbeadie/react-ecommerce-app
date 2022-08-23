@@ -5,6 +5,7 @@ import Footwears from './assets/categories/new-shoes.jpg'
 import Accessories from './assets/categories/mens-watch-in-sun.jpg'
 
 const Categories = () => {
+    //TODO: set cursor to default on image hover
 
     const categories = [
         {
