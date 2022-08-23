@@ -4,11 +4,6 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { NavLink } from "react-router-dom";
 import '../App.css'
 
-const navStyle = {
-    textDecoration: 'none',
-    color: '#333'
-}
-
 const Navbar = ({cart,setCart}) => {
 
     const [nav, setNav] = useState(false)

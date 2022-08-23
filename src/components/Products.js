@@ -1,6 +1,6 @@
 import React from 'react'
 import products from './Data'
-import { Link } from "react-router-dom";
+import ProductCard from './ProductCard';
 
 const Products = ({cart,setCart}) => {
 
@@ -19,31 +19,10 @@ const Products = ({cart,setCart}) => {
         <div className='product-imgs'>
 
             {products.map((product) => (
-              <div key={product.id} className='a-prod-img'>
-                <figure key={product.id}>
-                  <Link to={`${product.id}`}>
-                  <img className='img-back' src={product.imageBack} alt={product.name}/>
-                  <img className='img-front' src={product.imageFront} alt={product.name}/>
-                  </Link>
-                </figure>
-                <div class="perks">
-                  <span class="one">{product.perk_one}</span>
-                  <span class="two">{product.perk_two}</span>
-                </div>
-                <div class="a-prod-info">
-                  <div class="brand">{product.brand}</div>
-                  <div class="name">{product.name}</div>                                       
-                  <div class="price">
-                    <p>{product.discount}</p>
-                    <span>{product.price}</span>
-                  </div>   
-                  <div className='overlay'>
-                      <button class="add-to-cart"
-                    onClick={() => handleAddToCart(product)}>
-                    ADD TO CART</button>
-                  </div>                     
-                </div>
-              </div>
+              <ProductCard 
+              key={product.id}
+              product={product}
+              handleAddToCart={handleAddToCart}/>
             ))}
 
         </div>
