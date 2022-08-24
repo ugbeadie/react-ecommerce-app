@@ -870,81 +870,169 @@ figure {
     padding-top: 50px;
 }
     
-    .blog-img {
-        width: 100%;
-        position: relative;
-    }
+.blog-img {
+    width: 100%;
+    position: relative;
+}
 
-    .blog-img img {
-        width: 100%;
-    }
-        
-    .blog-img .blog-text {        
-        position: relative;
-        padding: 22px 15px 10px;
-        margin: -70px 20px 0 20px;
-        background-color: white;
-        border-radius: 6px;
-        text-align: center;
-        transition: all 0.3s ease-in;
-    }
+.blog-img img {
+    width: 100%;
+}
     
-    .blog-img:hover .blog-text {
-        margin: 0 10px;
-        margin: -80px 10px 0 10px;
-    }
+.blog-img .blog-text {        
+    position: relative;
+    padding: 22px 15px 10px;
+    margin: -70px 20px 0 20px;
+    background-color: white;
+    border-radius: 6px;
+    text-align: center;
+    transition: all 0.3s ease-in;
+}
 
-        .blog-text .name {
-            color: var(--blue);
-            font-weight: 400;
-            font-size: 14px;
-            cursor: pointer;
-        }
-    
-        .blog-text .title {
-            font-weight: 400;
-            margin-top: 10px;
-            cursor: pointer;
-            transition: 0.2s ease-in;
-        }
-    
-        .blog-text .title:hover {
-            color: var(--blue);
-        }
-    
-        .blog-text .desc {
-            font-weight: 300;
-            color: var(--gray);
-            font-size: 13px;
-            margin-top: 18px;
-        }
-    
-        .author_comment {
-            display: flex;
-            justify-content: space-evenly;
-            font-size: 14px;
-            color: var(--gray);
-            font-size: 12px;
-            font-weight: 300;
-            margin-top: 18px;
-        }
-    
-        .author_comment p span {
-            color: var(--black);
-            font-weight: 400;
-        }
-    
-        .comment {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: var(--black);
-            font-weight: 400;
-        }
-    
-        .comment p {
-            margin-left: 5px;
-        }
+.blog-img:hover .blog-text {
+    margin: 0 10px;
+    margin: -80px 10px 0 10px;
+}
+
+.blog-text .name {
+    color: var(--blue);
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.blog-text .title {
+    font-weight: 400;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.blog-text .title:hover {
+    color: var(--blue);
+}
+
+.blog-text .desc {
+    font-weight: 300;
+    color: var(--gray);
+    font-size: 13px;
+    margin-top: 18px;
+}
+
+.author_comment {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 14px;
+    color: var(--gray);
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 18px;
+}
+
+.author_comment p span {
+    color: var(--black);
+    font-weight: 400;
+}
+
+.comment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--black);
+    font-weight: 400;
+}
+
+.comment p {
+    margin-left: 5px;
+}
+
+.logos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f7f9;
+    margin: 60px 0 0px;
+    padding: 100px 40px;
+}   
+
+.logo img {
+    width: 100%;
+}
+
+.socials {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin-top: 40px;
+}
+
+.social {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social img {
+    width: 100%;
+    height: 280px;
+}
+
+.instagram-link {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0; 
+    transition: 0.2s ease-in;   
+}
+
+.instagram-link a {
+    color: #6c7ae0;
+}
+
+.social:hover .instagram-link {
+    opacity: 1;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 50px 70px;
+    gap: 20px;
+}
+
+.feature {
+    display: flex;
+}
+
+.feature-img img {
+    filter: invert(52%) sepia(71%) saturate(2430%) hue-rotate(209deg) brightness(91%) contrast(92%);
+}
+
+.feature-info {
+    margin-left: 15px;
+    font-weight: 300;
+}
+
+.feature-info h3 {
+    color: var(--black);
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.feature-info p {
+    font-size: 13px;
+    color: var(--gray);
+}
 
 @media screen and (max-width:1000px) {
     .categories {
@@ -961,6 +1049,21 @@ figure {
         padding: 20px 50px;
     }
     .product-imgs, .collections, .blog-imgs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .logos {
+        width: 100%;
+        display: grid;
+        gap: 50px                 ;
+        grid-template-columns: repeat(3,1fr);
+    }  
+    .socials {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .features {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1090,25 +1193,15 @@ figure {
     .right {
         display: flex;
         flex-direction: column;
-        /* justify-content: center; */
-        /* align-items: center; */
         padding: 0 50px;
-    }
-    .right .name {
-        /* text-align: center; */
     }
     .rating {
         display: flex;
-        /* justify-content: space-between; */
         align-items: center;
-    }    
-    .desc {
-        /* text-align: center; */
     }
     .color {
         display: flex;
         flex-direction: column;
-        /* align-items: center; */
     }
     .cta button {
         width: 100%;
@@ -1137,6 +1230,9 @@ figure {
     }
     .blog-container {
         padding: 80px 40px;
+    }
+    .features {
+        margin: 40px;
     }
 }
 
@@ -1262,6 +1358,19 @@ figure {
     }
     .blog-container {
         padding: 50px 0;
+    }
+    .socials {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 40px;
+    }
+    .social img {     
+        height: 220px;
+    }
+    .features {
+        display: flex;
+        flex-direction: column;
+        margin: 40px 20px;
     }
 }
 

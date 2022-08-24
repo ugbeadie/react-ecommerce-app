@@ -55,7 +55,7 @@ const MiniBlog = () => {
                         <p className='desc'>
                             It is a long established fact that by 
                             the readable content of a page when 
-                            looking at its layout.
+                            looking at its layout...
                        </p>
                        <div className='author_comment'>
                             <p className='author'>by <span>{blog.author}</span> on {blog.date}</p>
