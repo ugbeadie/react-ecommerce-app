@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom';
 import products from '../Data';
 import rating from '../assets/rating.jpg'
 
+//TODO: ADD SPECIFIC COLOR TO ARRAY AND RENDER IT
+
 const SingleProduct = ({handleAddToCart}) => {
 
   const { productId } = useParams();
