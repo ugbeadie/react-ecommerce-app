@@ -35,8 +35,7 @@ const MiniBlog = () => {
             comments: '19'
         },
     ]
-    //TODO: set a slider for mobile
-
+    //TODO LINK BLOG TO BLOG PAGE
   return (
     <div className='blog-container'>
 

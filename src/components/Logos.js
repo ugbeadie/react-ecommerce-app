@@ -1,11 +1,11 @@
 import React from 'react'
-import lacoste from './assets/logos/topshop.webp'
-import calvin from './assets/logos/mango.webp'
-import dior from './assets/logos/zara.webp'
-import chanel from './assets/logos/bershka.webp'
-import prada from './assets/logos/asos.webp'
-import zara from './assets/logos/river-island.webp'
-
+import lacoste from './assets/logos/topshop.jpg'
+import calvin from './assets/logos/mango.jpg'
+import dior from './assets/logos/zara.jpg'
+import chanel from './assets/logos/bershka.jpg'
+import prada from './assets/logos/asos.jpg'
+import zara from './assets/logos/river-island.jpg'
+//TODO: CONVERT IMAGE FORMAT
 const Logos = () => {
   return (
     <div className='logos'>
