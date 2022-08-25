@@ -7,6 +7,7 @@ import MiniBlog from '../MiniBlog'
 import Logos from '../Logos'
 import Social from '../Social'
 import Features from '../Features'
+import Footer from '../Footer'
 
 const Home = ({cart,setCart}) => {
   return (
@@ -19,6 +20,7 @@ const Home = ({cart,setCart}) => {
       <MiniBlog/>
       <Social/>
       <Features/>
+      <Footer/>
     </div>
   )
 }

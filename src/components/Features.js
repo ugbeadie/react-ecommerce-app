@@ -11,7 +11,7 @@ const Features = () => {
             id: '1',
             image: `${shipping}`,
             type: 'free shipping',
-            desc: 'Free shipping on all US order or order above $100.'
+            desc: 'Free shipping on all US order or order above $1000.'
         },
         {
             id: '2',

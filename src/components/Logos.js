@@ -5,7 +5,7 @@ import dior from './assets/logos/zara.jpg'
 import chanel from './assets/logos/bershka.jpg'
 import prada from './assets/logos/asos.jpg'
 import zara from './assets/logos/river-island.jpg'
-//TODO: CONVERT IMAGE FORMAT
+
 const Logos = () => {
   return (
     <div className='logos'>
