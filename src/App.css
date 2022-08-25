@@ -1018,7 +1018,7 @@ figure {
 
 .feature {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .feature-img img {
