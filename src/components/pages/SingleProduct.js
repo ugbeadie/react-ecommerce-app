@@ -3,13 +3,12 @@ import { useParams } from 'react-router-dom';
 import products from '../Data';
 import rating from '../assets/rating.jpg'
 
-//TODO: ADD SPECIFIC COLOR TO ARRAY AND RENDER IT
-
 const SingleProduct = ({handleAddToCart}) => {
 
   const { productId } = useParams();
   const product = products.find((product) => product.id == productId);
-  const { imageFront, name, brand, discount, price, save, reviews } = product;
+  const { imageFront, name, brand, discount,
+          price, save, reviews, color } = product;
   return (
     <section className='single-product'>
       <div className='single-prod-container'>
@@ -39,8 +38,7 @@ const SingleProduct = ({handleAddToCart}) => {
                 eaque ipsa quae ab illo inventore veritatis 
             </p>
             <div class="color">
-                <h5 class>color: <span>black</span></h5>
-                <div class="black"></div>
+                <h5 class>color: <span>{color}</span></h5>
             </div>
             <div className='cta'>                
                 <button

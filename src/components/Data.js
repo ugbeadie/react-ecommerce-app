@@ -15,7 +15,7 @@ import ImageBack7 from "./assets/footwears/4138332107_2_1_1_490x.progressive.jpg
 import ImageFront8 from "./assets/men/1271613811_1_1_1_490x.progressive.jpg"
 import ImageBack8 from "./assets/men/1271613811_2_1_1_490x.progressive.jpg"
 
-//todo - add an instock feature
+// todo - add an instock feature
 
 const products = [
     {
@@ -30,6 +30,7 @@ const products = [
     perk_one: 'New',
     perk_two: '-30%',
     save: 'you save: $135.00 (30%)',
+    color: 'black',
     count: 1 
     },
     {
@@ -40,6 +41,7 @@ const products = [
     imageFront: `${ImageFront2}`,
     imageBack: `${ImageBack2}`,
     reviews: '15',
+    color: 'blue',    
     count: 1
     },
     {
@@ -50,8 +52,9 @@ const products = [
     imageFront: `${ImageFront3}`,
     imageBack: `${ImageBack3}`,
     reviews: '10',
+    color: 'white',
     count: 1
-    },
+},
     {
     id: 4,
     brand: 'Chanel',
@@ -60,8 +63,9 @@ const products = [
     imageFront: `${ImageFront4}`,
     imageBack: `${ImageBack4}`,
     reviews: '12',
+    color: 'black',
     count: 1
-    },
+},
     {
     id: 5,
     brand: 'Lacoste',
@@ -70,9 +74,10 @@ const products = [
     imageFront: `${ImageFront5}`,
     imageBack: `${ImageBack5}`,
     reviews: '15',
+    color: 'blue',
     count: 1
-    },
-    {
+},
+{
     id: 6,
     brand: 'Dolce & Gabana',
     name: 'Two-Tone Sleeveless Shirt',
@@ -80,6 +85,7 @@ const products = [
     imageFront: `${ImageFront6}`,
     imageBack: `${ImageBack6}`,
     reviews: '14',
+    color: 'white',
     count: 1
     },
     {
@@ -90,6 +96,7 @@ const products = [
     imageFront: `${ImageFront7}`,
     imageBack: `${ImageBack7}`,
     reviews: '19',
+    color: 'brown',
     count: 1
     },
     {
@@ -100,8 +107,9 @@ const products = [
     imageFront: `${ImageFront8}`,
     imageBack: `${ImageBack8}`,
     reviews: '15',
+    color: 'gray',
     count: 1
-    },
+},
 ]
 
 export default products;

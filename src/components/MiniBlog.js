@@ -1,8 +1,9 @@
 import React from 'react'
+import { AiOutlineMessage } from 'react-icons/ai';
+import { Link } from "react-router-dom";
 import catalogue from './assets/blog/catalogue.jpg'
 import summer from './assets/blog/countdown.jpg'
 import promo from './assets/blog/promo.jpg'
-import { AiOutlineMessage } from 'react-icons/ai';
 
 const MiniBlog = () => {
 
@@ -33,9 +34,9 @@ const MiniBlog = () => {
             author: 'Chino Adie',
             date: 'June 15, 2022',
             comments: '19'
-        },
+        }
     ]
-    //TODO LINK BLOG TO BLOG PAGE
+    
   return (
     <div className='blog-container'>
 
@@ -50,7 +51,9 @@ const MiniBlog = () => {
 
                     <div className='blog-text'>
                         <p className='name'>{blog.name}</p>
+                        <Link to="/blog">
                         <h3 className='title'>{blog.title}</h3>
+                        </Link>
                         <p className='desc'>
                             It is a long established fact that by 
                             the readable content of a page when 
@@ -74,20 +77,3 @@ const MiniBlog = () => {
 }
 
 export default MiniBlog
-
-                    //     <div className='blog-text'>
-                    //     <p className='name'>{blog.name}</p>
-                    //     <h3 className='title'>{blog.title}</h3>
-                    //     <p className='desc'>
-                    //         It is a long established fact that by 
-                    //         the readable content of a page when 
-                    //         looking at its layout.
-                    //     </p>
-                    //     <div className='author_comment'>
-                    //         <p className='author'>by <span>{blog.author}</span> on {blog.date}</p>
-                    //         <div className='comment'>
-                    //             <AiOutlineMessage/>
-                    //             <p>{blog.comments}</p>
-                    //         </div>
-                    //     </div>    
-                    // </div>
