@@ -168,6 +168,10 @@ body {
     .blog {
         padding: 80px 50px;
     }
+    .blog-title {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
     .hover-text {
         padding: 20px;
     }
@@ -191,6 +195,10 @@ body {
     }
     .blog {
         padding: 80px 20px;
+    }
+    .blog-title {
+        padding: 10px;
+        font-size: 12px;
     }
 }
 
