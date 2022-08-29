@@ -11,6 +11,10 @@ const Shop = ({handleAddToCart}) => {
     <div className='head'>
       SHOP
     </div>
+    <div class="product-head">
+        <h3><span>OUR PRODUCTS</span></h3>
+        <p>Get the right fit for you</p>
+      </div>
       <section className='shop-imgs'>
         {products.map((product) => (
           <ProductCard 

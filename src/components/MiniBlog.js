@@ -47,13 +47,12 @@ const MiniBlog = () => {
         <div className='blog-imgs'>
         {blogs.map((blog) => (
             <div key={blog.id} className='blog-img'>
+                        <Link to="/blog" style={{textDecoration: 'none'}}>
                         <img src={blog.image} alt={blog.name}/>
 
                     <div className='blog-text'>
                         <p className='name'>{blog.name}</p>
-                        <Link to="/blog">
                         <h3 className='title'>{blog.title}</h3>
-                        </Link>
                         <p className='desc'>
                             It is a long established fact that by 
                             the readable content of a page when 
@@ -68,6 +67,7 @@ const MiniBlog = () => {
                        </div>
                     </div>
 
+                        </Link>
             </div>
         ))}
         </div>

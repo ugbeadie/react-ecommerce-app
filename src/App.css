@@ -936,8 +936,7 @@ figure {
     cursor: pointer;
 }
 
-.blog-text a {
-    text-decoration: none;
+.blog-text .title {
     color: var(--black);
 }
 
