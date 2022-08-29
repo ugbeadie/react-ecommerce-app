@@ -30,10 +30,10 @@ const Blog = () => {
 
   return (
     <>
-      <div className='blog-head'>BLOG</div>
+      <div className='head'>BLOG</div>
       <section className='blog'>
         {blogs.map((blog) => (
-          <div className='blog-card'>
+          <div key={blog.id} className='blog-card'>
               <div className='blog-img'>
 
               <img src={blog.image} alt='blog img'/>

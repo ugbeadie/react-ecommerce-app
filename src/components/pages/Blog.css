@@ -17,7 +17,7 @@ body {
     color: var(--black);
 }
 
-.blog-head {
+.head {
     font-family: 'Playfair Display', serif;
     color: white;
     background-color: rgb(188, 223, 240);
@@ -33,7 +33,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 30px;
-    padding: 20px 70px;
+    padding: 20px 70px 50px;
 }
 
 .blog-card {
@@ -159,7 +159,7 @@ body {
 }
 
 @media screen and (max-width: 720px) {
-    .blog-head {
+    .head {
         position: relative;
         top: 50px;
         padding: 40px 0;

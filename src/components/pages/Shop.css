@@ -33,7 +33,7 @@ body {
     grid-template-columns: repeat(4,1fr);
     gap: 30px;
     margin: 0;
-    padding: 50px 70px 50px;
+    padding: 50px 70px 70px;
 }
 
 .product-head {
