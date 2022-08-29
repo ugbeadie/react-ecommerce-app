@@ -50,14 +50,12 @@ const social = () => {
         </div>
         <div className='socials'>        
         {socials.map((social) => (
-        <div className='social'>
-            {/* <div className='zoom'> */}
+        <div key={social.id} className='social'>
                 <img src={social.image} alt=''/>
                 <div className='instagram-link'>
                     <AiOutlineInstagram size={30}/>
                     <p>@ <a href='#'>{social.handle}</a></p>
                 </div>
-            {/* </div> */}
         </div>
         ))}
     </div>

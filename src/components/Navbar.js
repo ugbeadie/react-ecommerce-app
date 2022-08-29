@@ -31,9 +31,9 @@ const Navbar = ({cart,setCart}) => {
                     </li>
 
                     <li onClick={() => setNav(false)} className='nav-items'>                    
-                    <NavLink to= "/about"
+                    <NavLink to= "/blog"
                     className={({ isActive }) => (isActive ? 'link active' : 'link')}>
-                    About
+                    Blog
                     </NavLink>
                     </li>
 

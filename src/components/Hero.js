@@ -1,16 +1,23 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Hero = () => {
+
+    useEffect(() => {
+        AOS.init({duration: 1500})
+    },[])
+
   return (
     <div className='hero'>
         <div className="hero-content">
-            <div>
+            <div data-aos="fade-down">
                 <h3>Men Collection 2022</h3>
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-delay="700">
                 <h1>NEW ARRIVALS</h1>
             </div>
-            <div>
+            <div data-aos="zoom-in" data-aos-delay="1400">
                 <button><span>SHOP NOW</span></button>
             </div>
             

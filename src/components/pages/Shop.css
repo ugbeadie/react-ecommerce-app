@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Poppins:wght@300;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #333;
+    --gray: #777;
+    --blue: #6c7ae0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--black);
+}
+
+.head {
+    background: rgba(0, 0, 0, 0.7) url(../../../public/b16.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    font-family: 'Playfair Display', serif;
+    margin-top: 50px;
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.shop-imgs {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    margin: 0;
+    padding: 50px 70px 50px;
+}
+
+@media screen and (max-width:1000px) {    
+    .shop-imgs {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width:720px) {
+    .head {
+        position: relative;
+        top: 50px;
+        padding: 40px 0;
+        margin: 0;
+    }
+    .shop-imgs {
+        padding: 70px 50px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .head {
+        padding: 30px 0;
+    }
+    .shop-imgs {
+        display: flex;
+        flex-direction: column;
+        padding: 70px 20px;
+    }
+}

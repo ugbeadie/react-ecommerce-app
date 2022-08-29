@@ -621,7 +621,31 @@ figure {
     transform: translateY(0);
 }
 
+.tooltip {
+    background-color: white;
+    position: absolute;
+    top: -25px;
+    padding: 10px;
+    /* opacity: 0; */
+}
+.tooltip::before {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.go-to-single-product {
+    display: flex;
+
+}
+
 .view-detail {
+    /* display: block; */
     color: var(--black);
     background-color: white;
     padding: 8px;
@@ -631,6 +655,7 @@ figure {
     right: 6%;
     opacity: 0;
     cursor: pointer;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     transform: translateX(20px);
     transition: 0.3s ease-in;
 }
@@ -638,6 +663,10 @@ figure {
 .view-detail:hover {
     background-color: var(--blue);
     color: white;
+}
+
+.view-detail:hover .tooltip {
+    opacity: 1;
 }
 
 .product-card:hover .view-detail {

@@ -46,7 +46,7 @@ const MiniBlog = () => {
         </div>
         <div className='blog-imgs'>
         {blogs.map((blog) => (
-            <div className='blog-img'>
+            <div key={blog.id} className='blog-img'>
                         <img src={blog.image} alt={blog.name}/>
 
                     <div className='blog-text'>
