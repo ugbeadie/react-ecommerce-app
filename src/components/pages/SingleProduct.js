@@ -1,7 +1,9 @@
 import { useParams } from 'react-router-dom';
-// import { useState } from "react";
+import './SingleProduct.css'
 import products from '../Data';
 import rating from '../assets/rating.jpg'
+import Social from '../Social'
+import Footer from '../Footer'
 
 const SingleProduct = ({handleAddToCart}) => {
 
@@ -10,6 +12,7 @@ const SingleProduct = ({handleAddToCart}) => {
   const { imageFront, name, brand, discount,
           price, save, reviews, color } = product;
   return (
+    <>
     <section className='single-product'>
       <div className='single-prod-container'>
         <div className='left'>
@@ -49,6 +52,9 @@ const SingleProduct = ({handleAddToCart}) => {
 
       </div>
     </section>
+    <Social/>
+    <Footer/>
+    </>
   );
 };
 

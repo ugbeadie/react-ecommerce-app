@@ -1,9 +1,9 @@
 import React from 'react'
+import './Shop.css'
 import products from '../Data'
 import ProductCard from '../ProductCard';
 import Social from '../Social'
 import Footer from '../Footer'
-import './Shop.css'
 
 const Shop = ({handleAddToCart}) => {
   return (
