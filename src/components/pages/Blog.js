@@ -5,6 +5,7 @@ import catalogue from '../assets/blog/blogpost1.jpg'
 import summer from '../assets/blog/blogpost2.jpg'
 import promo from '../assets/blog/blogpost3.jpg'
 import winter from '../assets/blog/blogpost4.jpg'
+import Social from '../Social'
 import Footer from '../Footer'
 
 const Blog = () => {
@@ -61,6 +62,7 @@ const Blog = () => {
         </div>
         ))}
       </section>
+      <Social/>
         <Footer/>
     </>
   )

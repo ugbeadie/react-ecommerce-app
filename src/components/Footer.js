@@ -6,8 +6,6 @@ import cirrus from './assets/footer/cirrus.jpg'
 import mastercard from './assets/footer/mastercard.jpg'
 import paypal from './assets/footer/paypal.jpg'
 
-//TODO ADD HR TAG AND COPYRIGHT;CHECK BTN ON MEDIUM SCREEN AND ADJUST
-
 const Footer = () => {
 
   const year = new Date().getFullYear()
