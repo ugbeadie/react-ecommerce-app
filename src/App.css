@@ -299,7 +299,7 @@ hr {
 }
 
 .hero {
-    background: url(../public/hero4.png) no-repeat;
+    background: url(../public/hero.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -1191,11 +1191,11 @@ figure {
     .desktop {
         display: none;
     }
-    .hero {
+    /* .hero {
         background: url(../public/hero-mobile.png) no-repeat;
         background-size: cover;
         background-position: center;
-    }
+    } */
     .hero-content {
         padding: 0 50px;
     }
