@@ -2,13 +2,6 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import { AiOutlineEye } from 'react-icons/ai';
 
-const style ={
-    padding: '8px',
-    borderRadius: '50%',
-    backgroundColor: 'white',
-    cursor: 'pointer',
-}
-
 const ProductCard = ({handleAddToCart,product}) => {
   return (
     <div className='product-card'>

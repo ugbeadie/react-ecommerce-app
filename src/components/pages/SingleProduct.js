@@ -59,21 +59,3 @@ const SingleProduct = ({handleAddToCart}) => {
 };
 
 export default SingleProduct;
-
-{/* <div className='quantity-wrapper'>
-                    <button onClick={() => handleDecrement()}
-                    className='minus'>-</button>
-                    <input className='item-count' type='number' value={count}/>
-                    <button onClick={() => setCount(count+1)}
-                    className='plus'>+</button>
-                </div> */}
-
-                    // const [count, setCount] = useState(1)
-    // const handleDecrement = () => {
-    //     if (count<=1) {
-    //         setCount(1)
-    //     }
-    //     else {
-    //         setCount(count-1)
-    //     }
-    // }
