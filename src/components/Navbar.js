@@ -4,13 +4,24 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { NavLink } from "react-router-dom";
 import '../App.css'
 
-const Navbar = ({cart,setCart}) => {
+const Navbar = () => {
 
     const [nav, setNav] = useState(false)
+    const [navOnScroll, setNavOnScroll] = useState(false)
+
+    const changeNavBackgroundOnScroll = () => {
+        if(window.scrollY >= 600) {
+            setNavOnScroll(true)
+        }   else {
+            setNavOnScroll(false)
+        }
+    }
+    
+    window.addEventListener('scroll', changeNavBackgroundOnScroll)
 
   return (
-        <nav className='navbar'>
-            <div className='nav-icon' onClick={() => setNav(!nav)}>
+        <nav className={navOnScroll ? 'navbar onscroll' : 'navbar'}>
+            <div className='toggle-btn' onClick={() => setNav(!nav)}>
                 {nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20}/>}
             </div>
             <div className='nav-left'>

@@ -47,8 +47,8 @@ const MiniBlog = () => {
         <div className='blog-imgs'>
         {blogs.map((blog) => (
             <div key={blog.id} className='blog-img'>
-                        <Link to="/blog" style={{textDecoration: 'none'}}>
-                        <img src={blog.image} alt={blog.name}/>
+                <Link to="/blog" style={{textDecoration: 'none'}}>
+                    <img src={blog.image} alt={blog.name}/>
 
                     <div className='blog-text'>
                         <p className='name'>{blog.name}</p>
@@ -66,8 +66,7 @@ const MiniBlog = () => {
                             </div>
                        </div>
                     </div>
-
-                        </Link>
+                </Link>
             </div>
         ))}
         </div>

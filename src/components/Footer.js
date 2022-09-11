@@ -22,11 +22,11 @@ const Footer = () => {
             incididunt cilisis consectetur adipiscin.
           </p>
           <div className='payment-options'>
-            <img src={mastercard}/>
-            <img src={visa}/>
-            <img src={discover}/>
-            <img src={paypal}/>
-            <img src={cirrus}/>
+            <img src={mastercard} alt='mastercard'/>
+            <img src={visa} alt='visa'/>
+            <img src={discover} alt='discover'/>
+            <img src={paypal} alt='paypal'/>
+            <img src={cirrus} alt='cirrus]'/>
           </div>
         </div>
         <div className='footer-column col-2'>

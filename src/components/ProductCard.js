@@ -18,8 +18,8 @@ const ProductCard = ({handleAddToCart,product}) => {
             <div class="brand">{product.brand}</div>
             <div class="name">{product.name}</div>                                       
             <div class="price">
-            <p>{product.discount}</p>
-            <span>{product.price}</span>
+                <p>{product.discount}</p>
+                <span>{product.price}</span>
             </div>   
             <div className='overlay'>
                 <button class="add-to-cart"

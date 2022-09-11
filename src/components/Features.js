@@ -38,7 +38,7 @@ const Features = () => {
         {features.map((feature) => (
             <div key={feature.id} class="feature">
             <div class="feature-img">
-                <img src={feature.image}/>
+                <img src={feature.image} alt={feature.type}/>
             </div>
             <div class="feature-info">
                 <h3>{feature.type}</h3>

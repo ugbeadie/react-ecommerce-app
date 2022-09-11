@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import products from './Data'
 import ProductCard from './ProductCard';
 import '../App.css'
@@ -26,6 +27,11 @@ const Products = ({cart,setCart}) => {
               handleAddToCart={handleAddToCart}/>
             ))}
 
+        </div>
+        <div className='go-to-shop'>
+          <Link to="/shop" style={{textDecoration: 'none'}}>
+              <button>go to shop</button>
+          </Link>      
         </div>
       </div>
     </div>
