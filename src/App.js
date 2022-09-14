@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useContext } from "react";
+import { cartContext } from "./Context";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Topbar from './components/Topbar';
 import Navbar from './components/Navbar';
@@ -13,8 +14,7 @@ import SingleProduct from "./components/pages/SingleProduct"
 //TODO: PREVENT SCROLLING TO TOP WHEN CHANGING ROUTES
 
 function App() {
-
-  const [cart, setCart] = useState([])
+  const {cart,setCart} = useContext(cartContext)
 
   const handleAddToCart = (product) => {
     if (cart.indexOf(product) !== -1) return          
@@ -25,33 +25,23 @@ function App() {
     <>
       <Router>
         <Topbar/>
-        <Navbar cart={cart}/>
+        <Navbar/>
         <div className='content'>          
           <Routes>
-            <Route path='/' element={<Home 
-              cart={cart} 
-              setCart={setCart}/>}/>
+            <Route path='/' element={<Home/>}/>
             <Route path='/:productId' element={<SingleProduct
-              cart={cart}
-              setCart={setCart}
               handleAddToCart={handleAddToCart}
             />}/>
             <Route path='/shop' element={<Shop
-              cart={cart} 
-              setCart={setCart}
               handleAddToCart={handleAddToCart}
             />}/>
             <Route path='/shop/:productId' element={<SingleProduct
-              cart={cart}
-              setCart={setCart}
+              
               handleAddToCart={handleAddToCart}
             />}/>
             <Route path='/blog' element={<Blog/>}/>
             <Route path='/contact' element={<Contact/>}/>
-            <Route path='/cart' element={<Cart
-              cart={cart}
-              setCart={setCart}
-              />}/>
+            <Route path='/cart' element={<Cart/>}/>
           </Routes>
         </div>
       </Router>

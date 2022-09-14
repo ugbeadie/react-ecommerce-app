@@ -1,11 +1,14 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState,useEffect,useContext} from 'react'
+import { cartContext } from "../..//Context";
 import { Link } from "react-router-dom";
 import { AiFillDelete } from 'react-icons/ai';
 import Social from '../Social'
 import Footer from '../Footer'
 import './Cart.css'
 
-const Cart = ({cart,setCart}) => {
+const Cart = () => {
+  const {cart,setCart} = useContext(cartContext)
+
   const [price,setPrice] = useState(0)
 
   const handlePrice = () => {

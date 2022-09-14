@@ -47,10 +47,12 @@ body {
 
 .empty-cart-notif button {
     font-family: 'Poppins', sans-serif;
-    padding: 8px 20px;
-    background-color: rgb(188, 223, 240);
+    background-color: rgb(188, 223,  240);
     border: none;
     border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 20px; 
     margin-top: 10px;
     text-transform: uppercase;
     cursor: pointer;
@@ -195,6 +197,7 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 60px;
     padding: 0 20px;
 }
 
@@ -202,14 +205,15 @@ hr {
     border-radius: 50px;
     text-align: center;
     display: inline-block;
+    color: white;
+    background-color: var(--blue);
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
     margin-top: 20px;
     padding: 12px 30px 10px;
-    color: white;
-    background-color: var(--blue);
+    cursor: pointer;
 }
 
 .continue-shopping a {
@@ -313,6 +317,13 @@ hr {
         margin-top: 40px;
         padding: 20px;
     }    
+}
+
+@media screen and (max-width:500px) {
+    .clear_continue {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 350px) {

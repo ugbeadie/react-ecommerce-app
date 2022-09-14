@@ -9,12 +9,12 @@ import Social from '../Social'
 import Features from '../Features'
 import Footer from '../Footer'
 
-const Home = ({cart,setCart}) => {
+const Home = () => {
   return (
     <div>
       <Hero/>
       <Categories/> 
-      <Products cart={cart} setCart={setCart}/>  
+      <Products/>  
       <Collection/>  
       <Logos/>
       <MiniBlog/>

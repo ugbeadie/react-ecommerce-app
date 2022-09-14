@@ -1,10 +1,12 @@
-import React from 'react'
+import React,{useContext} from 'react'
+import { cartContext } from "../Context";
 import { Link } from "react-router-dom";
 import products from './Data'
 import ProductCard from './ProductCard';
 import '../App.css'
 
-const Products = ({cart,setCart}) => {
+const Products = () => {
+  const {cart,setCart} = useContext(cartContext)
 
     const handleAddToCart = (product) => {
         if (cart.indexOf(product) !== -1) return          

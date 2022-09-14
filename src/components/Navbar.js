@@ -1,11 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState,useContext } from 'react'
+import { cartContext } from "../Context";
 import { FaShoppingCart } from 'react-icons/fa';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { NavLink } from "react-router-dom";
 import '../App.css'
 import Cart from './pages/Cart';
 
-const Navbar = ({cart}) => {
+const Navbar = () => {
+
+  const {cart} = useContext(cartContext)
+
 
     const [nav, setNav] = useState(false)
     const [navOnScroll, setNavOnScroll] = useState(false)
