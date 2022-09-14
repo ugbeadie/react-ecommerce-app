@@ -62,8 +62,10 @@ const Navbar = ({cart}) => {
             <div className='nav-right'>
             <NavLink to="/cart">
                 <FaShoppingCart size={20} style={{color: '#333'}}/>  
-                <span>{cart.length}</span>
             </NavLink>              
+                {cart.length > 0 ? 
+                <span>{cart.length}</span> : 
+                null}
             </div>            
         </nav>
   )

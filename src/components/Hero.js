@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
 
@@ -18,7 +19,7 @@ const Hero = () => {
                 <h1>NEW ARRIVALS</h1>
             </div>
             <div data-aos="zoom-in" data-aos-delay="1400">
-                <button><span>SHOP NOW</span></button>
+                <Link to="/shop"><button>SHOP NOW</button></Link>
             </div>
             
         </div>

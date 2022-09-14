@@ -59,6 +59,7 @@ body {
 .go-shopping {
     text-decoration: none;
     color: var(--black);
+    margin-bottom: 60px;
 }
 
 .mobile {
@@ -189,7 +190,15 @@ hr {
     font-size: 18px;
 }
 
-.clear-cart {
+.clear_continue {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.clear-cart, .continue-shopping {
     border-radius: 50px;
     text-align: center;
     display: inline-block;
@@ -203,6 +212,11 @@ hr {
     background-color: var(--blue);
 }
 
+.continue-shopping a {
+    color: white;
+    text-decoration: none;
+}
+
 .cart-total {
     width: 100%;
     display: flex;
@@ -212,9 +226,10 @@ hr {
 }
 
 .cart-total div {
-    background-color: rgb(188, 223, 240, 0.2);
-    margin-top: 40px;
+    background-color: rgb(188, 223, 240, 0.4);
+    margin: 40px 20px 60px 0;
     padding: 40px;
+    border-radius: 10px;
 }
 
 .cart-total h6 {

@@ -1,6 +1,8 @@
 import React,{useState,useEffect} from 'react'
 import { Link } from "react-router-dom";
 import { AiFillDelete } from 'react-icons/ai';
+import Social from '../Social'
+import Footer from '../Footer'
 import './Cart.css'
 
 const Cart = ({cart,setCart}) => {
@@ -73,7 +75,7 @@ const Cart = ({cart,setCart}) => {
             </div>
 
             <div className='col-2 item-price'>
-            <p>{item.price}</p>
+            <p>${item.price}</p>
             
             </div>
             
@@ -99,23 +101,29 @@ const Cart = ({cart,setCart}) => {
         
         )}
         {cart.length > 0 ? 
-        <div className='clear-cart' onClick={() => setCart([])}>
+        <div className='clear_continue'>
+          <div className='clear-cart' onClick={() => setCart([])}>
           <p>clear cart</p>
+        </div>
+        <div className='continue-shopping'>
+          <Link to="/shop">Continue shopping</Link>
+        </div>
         </div> :
         null}
         {cart.length > 0 ? 
         <div className="cart-total">
           <div>
             <h6>Cart total</h6>
-            <p>Subtotal: <span>$ {price}</span></p>
+            <p>Subtotal: <span>$ {price}.00</span></p>
             <a href="#" className="primary-btn">Proceed to checkout</a>
           </div>
         </div> :
         null}
 
+  <Social/>
+  <Footer/>
         </div>
   )
- 
 }
 
 export default Cart

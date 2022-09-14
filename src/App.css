@@ -57,7 +57,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     padding: 5px 70px;
     transition: all 0.2s ease-in;
-    z-index: 1;
+    z-index: 10;
 }
 
 .navbar.onscroll {
@@ -110,6 +110,19 @@ body {
     color: #6c7ae0;
 }
 
+.nav-right {
+    position: relative;
+}
+
+.nav-right span {
+    position: absolute;
+    top: -10px;
+    color: white;
+    background-color: var(--blue);
+    border-radius: 50%;
+    padding: 0 5px;
+}
+
 .toggle-btn {
     display: none;
 }
@@ -125,7 +138,6 @@ body {
     padding: 2px 5px;
     border-radius: 10px;
 }
-
 
 .hero {
     background: url(../public/hero.jpg) no-repeat;
@@ -168,15 +180,12 @@ body {
     padding: 15px 40px;
     margin-top: 18px;
     cursor: pointer;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    transition: all 0.2s ease-in;
-}
-
-.hero-content button span {
     color: white;
     text-decoration: none;
     font-size: 15px;
     font-weight: 700;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-in;
 }
 
 .hero-content button:hover {
@@ -190,7 +199,6 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
     padding: 30px 70px;
-    /* overflow: hidden; */
 }
 
 .category-imgs img {

@@ -1,13 +1,16 @@
 import { useState } from "react";
-import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Topbar from './components/Topbar';
+import Navbar from './components/Navbar';
 import Home from "./components/pages/Home"
 import Shop from "./components/pages/Shop"
 import Blog from "./components/pages/Blog"
 import Contact from "./components/pages/Contact"
-import Topbar from './components/Topbar';
 import Cart from "./components/pages/Cart";
 import SingleProduct from "./components/pages/SingleProduct"
+
+//TODO: NEW IMAGES FOR BANNER
+//TODO: PREVENT SCROLLING TO TOP WHEN CHANGING ROUTES
 
 function App() {
 
