@@ -3,8 +3,9 @@ import { FaShoppingCart } from 'react-icons/fa';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { NavLink } from "react-router-dom";
 import '../App.css'
+import Cart from './pages/Cart';
 
-const Navbar = () => {
+const Navbar = ({cart}) => {
 
     const [nav, setNav] = useState(false)
     const [navOnScroll, setNavOnScroll] = useState(false)
@@ -61,6 +62,7 @@ const Navbar = () => {
             <div className='nav-right'>
             <NavLink to="/cart">
                 <FaShoppingCart size={20} style={{color: '#333'}}/>  
+                <span>{cart.length}</span>
             </NavLink>              
             </div>            
         </nav>

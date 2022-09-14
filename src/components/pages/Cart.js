@@ -1,31 +1,37 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import { Link } from "react-router-dom";
 import { AiFillDelete } from 'react-icons/ai';
+import './Cart.css'
 
 const Cart = ({cart,setCart}) => {
+  const [price,setPrice] = useState(0)
 
-  const handleRemove = (id) => {
-    const arr = cart.filter((item) => item.id !== id)
-    setCart(arr)
+  const handlePrice = () => {
+    let ans = 0
+    cart.map((item) => (ans += item.count * item.price))
+    setPrice(ans)
   }
 
+  useEffect(() => {
+    handlePrice()
+  })
+
   const handleChange = (item, d) => {
-    const ind = cart.indexOf(item)
+    const index = cart.indexOf(item)
     const arr = cart
-    arr[ind].count += d
-    if (arr[ind].count < 1) {
-      arr[ind].count = 1
+    arr[index].count += d
+    if (arr[index].count < 1) {
+      arr[index].count = 1
     } else {
       setCart([...arr])
     }
   }
 
-  // const handlePrice = () => {
-  //   let ans = 0
-  //   const qwe = cart.map((item) => (ans += item.count * item.price))
-  //   console.log(qwe)
-  //   setPrice(ans)
-  // }
+  const handleRemove = (id) => {
+    const arr = cart.filter((item) => item.id !== id)
+    setCart(arr)
+    handlePrice()
+  }
 
   return (
     <div className='cart'>
@@ -33,8 +39,8 @@ const Cart = ({cart,setCart}) => {
       {cart.length === 0 && (
         <div className='empty-cart-notif'>
           <p>Your Cart Is Empty</p>
-          <button><Link className='go-shopping' to= "/shop">
-          Go Shopping</Link></button>
+          <Link className='go-shopping' to= "/shop"><button>
+          Go Shopping</button></Link>
         </div>
       )}
 
@@ -45,7 +51,6 @@ const Cart = ({cart,setCart}) => {
             <p className='product'>PRODUCT(S)</p>
             <div className='cost'><p>PRICE</p></div>
             <div className='quantity'><p>QUANTITY</p></div>
-            <p className='sub-total'>SUBTOTAL</p>
           </div>
           <hr className='line'/>
         </div>
@@ -59,56 +64,63 @@ const Cart = ({cart,setCart}) => {
               <div>
                 <p className='item-brand'>{item.brand}</p>
                 <p className='item-name'>{item.name}</p>
-                <AiFillDelete style={{cursor:'pointer'}} size={20}
+                <p className='item-color'>{item.color}</p>
+                <AiFillDelete className='mobile'
+                style={{cursor:'pointer'}} size={20}
                   onClick={() => handleRemove(item.id)}
                 />
               </div>
             </div>
 
-            <div className='col-2 item-price desktop'>
-            <div><p>{item.price}</p></div>
-            
-            </div>
-            
-            <div className='col-3 desktop'>
-              <div className='quantity-wrapper'>
-                <button onClick={() => handleChange(item, -1)}
-                className='minus'>-</button>
-                <input className='item-count' type='number' value={item.count}/>
-                <button onClick={() => handleChange(item, 1)}
-                className='plus'>+</button>
-              </div>
-            </div>        
-            
-            <div className='col-4 desktop'>{item.price}</div>
-
-          <div className='mobile'>
             <div className='col-2 item-price'>
-            <div><p><span>Price:</span> {item.price}</p></div>
+            <p>{item.price}</p>
             
             </div>
             
             <div className='col-3'>
               <div className='quantity-wrapper'>
                 <button onClick={() => handleChange(item, -1)}
-              className='minus'>-</button>
-              <input className='item-count' value={item.count}/>
-              <button onClick={() => handleChange(item, 1)}
-              className='plus'>+</button>
+                className='minus'>-</button>
+                <span>{item.count}</span>
+                <button onClick={() => handleChange(item, 1)}
+                className='plus'>+</button>
               </div>
-            </div>        
-            
-            <div className='col-4'><span>Subtotal:</span> {item.price}</div>
-          </div>
+            </div>   
 
+            <div className='col-4 desktop'>
+              <AiFillDelete style={{cursor:'pointer'}} size={30}
+                  onClick={() => handleRemove(item.id)}
+                />
+            </div>     
           </div>
+            
           <hr/>
         </div>
+        
         )}
-      {/* </div> */}
-      {/* <div className='main-total'>maintotal: ${price}</div> */}
-    </div>
+        {cart.length > 0 ? 
+        <div className='clear-cart' onClick={() => setCart([])}>
+          <p>clear cart</p>
+        </div> :
+        null}
+        <div className="cart-total">
+          <div>
+            <h6>Cart total</h6>
+            <p>Subtotal: <span>$ {price}</span></p>
+            <a href="#" className="primary-btn">Proceed to checkout</a>
+          </div>
+        </div>
+
+        </div>
   )
+ 
 }
 
 export default Cart
+        // {cart.map(item => item.price).reduce((total,value) => total + value, 0)}
+
+
+// onClick={() => handleChange(item, -1)}
+// onClick={() => handleChange(item, 1)}
+
+  

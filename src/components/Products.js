@@ -24,7 +24,8 @@ const Products = ({cart,setCart}) => {
               <ProductCard 
               key={product.id}
               product={product}
-              handleAddToCart={handleAddToCart}/>
+              handleAddToCart={handleAddToCart}
+              />
             ))}
 
         </div>
@@ -38,4 +39,4 @@ const Products = ({cart,setCart}) => {
   )
 }
 
-export default Products
+export default Products;

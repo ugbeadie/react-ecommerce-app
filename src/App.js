@@ -14,15 +14,15 @@ function App() {
   const [cart, setCart] = useState([])
 
   const handleAddToCart = (product) => {
-      if (cart.indexOf(product) !== -1) return          
-      setCart([...cart, product])
+    if (cart.indexOf(product) !== -1) return          
+    setCart([...cart, product])
   }
 
   return (
     <>
       <Router>
         <Topbar/>
-        <Navbar />
+        <Navbar cart={cart}/>
         <div className='content'>          
           <Routes>
             <Route path='/' element={<Home 
