@@ -30,7 +30,7 @@ const SingleProduct = ({handleAddToCart}) => {
                 <p>({reviews} Reviews)</p>
             </div>
             <div class="price">
-                <p>${discount}</p>
+                <p>{discount}</p>
                 <span>${price}</span>
             </div>
             <p class="save">{save}</p>

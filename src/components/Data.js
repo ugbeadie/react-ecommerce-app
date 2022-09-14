@@ -22,7 +22,7 @@ const products = [
     id: 1,
     brand: 'Lacoste',
     name: 'Simpson Sweatshirt',
-    discount: '450.00',
+    discount: '$450.00',
     price: '315.00',
     imageFront: `${ImageFront1}`,
     imageBack: `${ImageBack1}`,
