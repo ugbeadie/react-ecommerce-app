@@ -103,13 +103,15 @@ const Cart = ({cart,setCart}) => {
           <p>clear cart</p>
         </div> :
         null}
+        {cart.length > 0 ? 
         <div className="cart-total">
           <div>
             <h6>Cart total</h6>
             <p>Subtotal: <span>$ {price}</span></p>
             <a href="#" className="primary-btn">Proceed to checkout</a>
           </div>
-        </div>
+        </div> :
+        null}
 
         </div>
   )
