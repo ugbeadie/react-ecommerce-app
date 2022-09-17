@@ -20,7 +20,7 @@ body {
 .shop-header {
     font-family: 'Playfair Display', serif;
     color: white;
-    background: rgba(0, 0, 0, 0.2) url(../../../public/freestocks-_3Q3tsJ01nc-unsplash.jpg) no-repeat;
+    background: rgba(0, 0, 0, 0.5) url(../../../public/freestocks-_3Q3tsJ01nc-unsplash.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-blend-mode: darken;

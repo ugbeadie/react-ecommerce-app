@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useEffect,useContext } from "react";
 import { cartContext } from "./Context";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Topbar from './components/Topbar';
@@ -10,7 +10,7 @@ import Contact from "./components/pages/Contact"
 import Cart from "./components/pages/Cart";
 import SingleProduct from "./components/pages/SingleProduct"
 
-//TODO: PREVENT SCROLLING TO TOP WHEN CHANGING ROUTES
+//TODO: PREVENT SCROLLING TO bottom WHEN CHANGING ROUTES
 
 function App() {
   const {cart,setCart} = useContext(cartContext)
@@ -20,9 +20,19 @@ function App() {
     setCart([...cart, product])
   }
 
+  function ScrollToTopOnMount() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  return null;
+}
+
+
   return (
     <>
       <Router>
+      <ScrollToTopOnMount />
         <Topbar/>
         <Navbar/>
         <div className='content'>          
@@ -34,8 +44,7 @@ function App() {
             <Route path='/shop' element={<Shop
               handleAddToCart={handleAddToCart}
             />}/>
-            <Route path='/shop/:productId' element={<SingleProduct
-              
+            <Route path='/shop/:productId' element={<SingleProduct              
               handleAddToCart={handleAddToCart}
             />}/>
             <Route path='/blog' element={<Blog/>}/>

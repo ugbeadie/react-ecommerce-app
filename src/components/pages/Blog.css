@@ -19,12 +19,11 @@ body {
 
 .blog-header {
     font-family: 'Playfair Display', serif;
-    background: rgba(0, 0, 0, 0.2) url(../../../public/jess-bailey-q10VITrVYUM-unsplash\ \(1\).jpg) no-repeat;
+    background: rgba(0, 0, 0, 0.5) url(../../../public/thought-catalog-o0Qqw21-0NI-unsplash.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-blend-mode: darken;
     color: white;
-    background-color: rgb(188, 223, 240);
     margin: 50px 0;
     padding: 50px 0;
     font-size: 30px;
@@ -164,14 +163,14 @@ body {
 }
 
 @media screen and (max-width: 720px) {
-    .head {
+    .blog-header {
         position: relative;
         top: 50px;
         padding: 40px 0;
         margin: 0;
     }
     .blog {
-        padding: 80px 50px;
+        padding: 100px 50px;
     }
     .blog-title {
         padding: 10px 20px;

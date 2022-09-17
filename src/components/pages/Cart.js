@@ -122,10 +122,9 @@ const Cart = () => {
           </div>
         </div> :
         null}
-
   <Social/>
   <Footer/>
-        </div>
+  </div>
   )
 }
 
