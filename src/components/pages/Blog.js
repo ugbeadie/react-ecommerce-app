@@ -31,7 +31,7 @@ const Blog = () => {
 
   return (
     <>
-      <div className='head'>BLOG</div>
+      <div className='blog-header'>BLOG</div>
       <section className='blog'>
         {blogs.map((blog) => (
           <div key={blog.id} className='blog-card'>

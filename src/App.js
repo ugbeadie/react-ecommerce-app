@@ -10,7 +10,6 @@ import Contact from "./components/pages/Contact"
 import Cart from "./components/pages/Cart";
 import SingleProduct from "./components/pages/SingleProduct"
 
-//TODO: NEW IMAGES FOR BANNER
 //TODO: PREVENT SCROLLING TO TOP WHEN CHANGING ROUTES
 
 function App() {

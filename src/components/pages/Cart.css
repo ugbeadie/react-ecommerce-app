@@ -21,19 +21,22 @@ body {
     width: 100%;
     position: absolute;
     top: 12%;
-    /* padding: 0 70px; */
 }
 
 .cart-header {
     font-family: 'Playfair Display', serif;
+    background: rgba(0, 0, 0, 0.2) url(../../../public/jacek-dylag-jo8C9bt3uo8-unsplash.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
     width: 100%;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 20vh;
     font-size: 25px;
     text-transform: uppercase;
-    background-color: rgb(188, 223, 240);
 }
 
 .empty-cart-notif {
@@ -197,7 +200,7 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
     padding: 0 20px;
 }
 

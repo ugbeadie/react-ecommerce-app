@@ -17,14 +17,19 @@ body {
     color: var(--black);
 }
 
-.head {
+.blog-header {
     font-family: 'Playfair Display', serif;
+    background: rgba(0, 0, 0, 0.2) url(../../../public/jess-bailey-q10VITrVYUM-unsplash\ \(1\).jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
     color: white;
     background-color: rgb(188, 223, 240);
     margin: 50px 0;
     padding: 50px 0;
     font-size: 30px;
     font-weight: 700;
+    text-align: center;
 }
 
 .blog {
@@ -190,7 +195,7 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-    .head {
+    .blog-header {
         padding: 30px 0;
     }
     .blog {

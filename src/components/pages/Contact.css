@@ -20,6 +20,20 @@ body {
     padding: 30px 70px 70px;
 }
 
+.contact-header {
+    font-family: 'Playfair Display', serif;
+    color: white;
+    background: rgba(0, 0, 0, 0.2) url(../../../public/annie-spratt-goholCAVTRs-unsplash.jpg) no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-blend-mode: darken;
+    margin: 50px 0;
+    padding: 50px 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
 .contact-body {
     width: 100%;
     display: grid;
@@ -28,7 +42,7 @@ body {
     position: relative;
 }
 
-.contact-head {
+.heading {
     font-size: 25px;
     color: var(--blue);
 }
@@ -179,7 +193,7 @@ textarea {
 }
 
 @media screen and (max-width: 720px) {
-    .head {
+    .heading {
         position: relative;
         top: 50px;
         padding: 40px 0;

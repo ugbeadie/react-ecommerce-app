@@ -17,10 +17,13 @@ body {
     color: var(--black);
 }
 
-.head {
+.shop-header {
     font-family: 'Playfair Display', serif;
     color: white;
-    background-color: rgb(188, 223, 240);
+    background: rgba(0, 0, 0, 0.2) url(../../../public/freestocks-_3Q3tsJ01nc-unsplash.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
     margin: 50px 0;
     padding: 50px 0;
     text-align: center;
@@ -48,7 +51,7 @@ body {
 }
 
 @media screen and (max-width:720px) {
-    .head {
+    .shop-header {
         position: relative;
         top: 50px;
         padding: 40px 0;
@@ -63,7 +66,7 @@ body {
 }
 
 @media screen and (max-width:500px) {
-    .head {
+    .shop-header {
         padding: 30px 0;
     }
     .shop-imgs {

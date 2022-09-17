@@ -10,9 +10,9 @@ const Contact = () => {
   
   return (
     <>
-    <div className='head'>CONTACT</div>
+    <div className='contact-header'>CONTACT</div>
     <section className='contact'>
-    <h1 className='contact-head'>Get In Touch</h1>
+    <h1 className='heading'>Get In Touch</h1>
       <div className='contact-body'>
 
         <div className='contact-left'>

@@ -8,7 +8,7 @@ import Footer from '../Footer'
 const Shop = ({handleAddToCart}) => {
   return (
     <>
-    <div className='head'>
+    <div className='shop-header'>
       SHOP
     </div>
     <div class="product-head">
