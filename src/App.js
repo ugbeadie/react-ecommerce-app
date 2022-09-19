@@ -20,19 +20,19 @@ function App() {
     setCart([...cart, product])
   }
 
-  function ScrollToTopOnMount() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+//   function ScrollToTopOnMount() {
+//   useEffect(() => {
+//     window.scrollTo(0, 0);
+//   }, []);
 
-  return null;
-}
+//   return null;
+// }
 
 
   return (
     <>
       <Router>
-      <ScrollToTopOnMount />
+      {/* <ScrollToTopOnMount /> */}
         <Topbar/>
         <Navbar/>
         <div className='content'>          
