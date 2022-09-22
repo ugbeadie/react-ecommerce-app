@@ -1,6 +1,6 @@
 # UGBECOMMERCIALS
 
-[ugbecommercials](https://ugbecommercials.vercel.app/) is an ecommerce store built with react and styled with tailwind css.\
+[ugbecommercials](https://ugbecommercials.vercel.app/) is an ecommerce store built with react and styled with tailwind css.
 
 ## Features
 
