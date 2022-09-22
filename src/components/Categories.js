@@ -5,8 +5,7 @@ import Women from './assets/categories/woman-puts-hand-in-pocket.jpg'
 import Footwears from './assets/categories/new-shoes.jpg'
 import Accessories from './assets/categories/mens-watch-in-sun.jpg'
 
-const Categories = () => {
-    
+const Categories = () => {    
     const categories = [
         {
             id: 1,

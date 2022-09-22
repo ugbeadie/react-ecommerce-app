@@ -1,6 +1,6 @@
 import React from 'react'
-import './Blog.css'
 import { AiOutlineArrowRight } from 'react-icons/ai';
+import './Blog.css'
 import catalogue from '../assets/blog/blogpost1.jpg'
 import summer from '../assets/blog/blogpost2.jpg'
 import promo from '../assets/blog/blogpost3.jpg'

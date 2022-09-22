@@ -1,10 +1,9 @@
 import React, { useState,useContext } from 'react'
 import { cartContext } from "../Context";
+import { NavLink } from "react-router-dom";
 import { FaShoppingCart } from 'react-icons/fa';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
-import { NavLink } from "react-router-dom";
 import '../App.css'
-import Cart from './pages/Cart';
 
 const Navbar = () => {
 

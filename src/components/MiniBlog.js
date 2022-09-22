@@ -1,6 +1,6 @@
 import React from 'react'
-import { AiOutlineMessage } from 'react-icons/ai';
 import { Link } from "react-router-dom";
+import { AiOutlineMessage } from 'react-icons/ai';
 import catalogue from './assets/blog/catalogue.jpg'
 import summer from './assets/blog/countdown.jpg'
 import promo from './assets/blog/promo.jpg'

@@ -1,7 +1,7 @@
 import React from 'react'
-import './Contact.css'
 import { BsHouse,BsPhone } from 'react-icons/bs';
 import { GoMail } from 'react-icons/go';
+import './Contact.css'
 import Social from '../Social'
 import Footer from '../Footer'
 //TODO; ADD EMAIL VALIDATION

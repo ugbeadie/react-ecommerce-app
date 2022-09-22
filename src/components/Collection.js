@@ -1,8 +1,8 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import autumn from './assets/collection/autumn.jpg'
 import collection from './assets/collection/collection.png'
 import summer from './assets/collection/summer.jpg'
-import { Link } from "react-router-dom";
 
 const Collection = () => {
   return (

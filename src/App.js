@@ -5,10 +5,10 @@ import Topbar from './components/Topbar';
 import Navbar from './components/Navbar';
 import Home from "./components/pages/Home"
 import Shop from "./components/pages/Shop"
+import SingleProduct from "./components/pages/SingleProduct"
 import Blog from "./components/pages/Blog"
 import Contact from "./components/pages/Contact"
 import Cart from "./components/pages/Cart";
-import SingleProduct from "./components/pages/SingleProduct"
 
 //TODO: PREVENT SCROLLING TO bottom WHEN CHANGING ROUTES
 
@@ -20,19 +20,9 @@ function App() {
     setCart([...cart, product])
   }
 
-//   function ScrollToTopOnMount() {
-//   useEffect(() => {
-//     window.scrollTo(0, 0);
-//   }, []);
-
-//   return null;
-// }
-
-
   return (
     <>
       <Router>
-      {/* <ScrollToTopOnMount /> */}
         <Topbar/>
         <Navbar/>
         <div className='content'>          

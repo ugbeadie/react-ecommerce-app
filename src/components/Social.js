@@ -1,11 +1,11 @@
 import React from 'react'
+import { AiOutlineInstagram } from 'react-icons/ai';
 import one from './assets/social/one.jpg'
 import two from './assets/social/two.jpg'
 import three from './assets/social/three.jpg'
 import four from './assets/social/four.jpg'
 import five from './assets/social/five.jpg'
 import six from './assets/social/six.jpg'
-import { AiOutlineInstagram } from 'react-icons/ai';
 
 const social = () => {
 

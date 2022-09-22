@@ -2,9 +2,9 @@ import React,{useState,useEffect,useContext} from 'react'
 import { cartContext } from "../..//Context";
 import { Link } from "react-router-dom";
 import { AiFillDelete } from 'react-icons/ai';
+import './Cart.css'
 import Social from '../Social'
 import Footer from '../Footer'
-import './Cart.css'
 
 const Cart = () => {
   const {cart,setCart} = useContext(cartContext)
