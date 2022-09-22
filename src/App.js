@@ -9,8 +9,7 @@ import SingleProduct from "./components/pages/SingleProduct"
 import Blog from "./components/pages/Blog"
 import Contact from "./components/pages/Contact"
 import Cart from "./components/pages/Cart";
-
-//TODO: PREVENT SCROLLING TO bottom WHEN CHANGING ROUTES
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const {cart,setCart} = useContext(cartContext)
@@ -23,6 +22,7 @@ function App() {
   return (
     <>
       <Router>
+      <ScrollToTop/>
         <Topbar/>
         <Navbar/>
         <div className='content'>          
