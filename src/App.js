@@ -1,4 +1,4 @@
-import { useEffect,useContext } from "react";
+import { useContext } from "react";
 import { cartContext } from "./Context";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Topbar from './components/Topbar';
