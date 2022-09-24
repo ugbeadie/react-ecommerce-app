@@ -856,11 +856,12 @@ figure {
 }
 
 .footer-row .col-4 form input {
+    font-family: 'Poppins', sans-serif;
     height: 52px;
     width: 100%;
     padding-left: 30px;
     font-size: 14px;
-    color: red;
+    color: var(--gray);
     border: 1px solid rgb(225, 225, 225);
     border-radius: 50px;
 }
@@ -884,14 +885,11 @@ figure {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     color: white;
-    font-weight: 500;
+    background: var(--blue);
+    font-weight: 600;
+    border: none;
     text-transform: uppercase;
     display: inline-block;
-    background: var(--blue);
-    border-width: initial;
-    border-style: none;
-    border-color: initial;
-    border-image: initial;
     padding: 12px 30px;
     border-radius: 50px;
 }
@@ -989,11 +987,6 @@ figure {
     .hot {
         display: none;
     }
-    /* .hero {
-        background: url(../public/hero-mobile.png) no-repeat;
-        background-size: cover;
-        background-position: center;
-    } */
     .hero-content {
         padding: 0 50px;
     }
