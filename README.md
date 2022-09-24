@@ -4,7 +4,8 @@
 
 ## Features
 
-* React router was used to enable navigation among views of various components and each route has their specific features and animations.
+* React Router was used to enable navigation among views of various components and each route has their specific features and animations.
+* Scroll Restoration was used to make your page scroll to the top whenever you change routes in the site using React Router.
 * Context API was used to create (cart and setCart) states that was accessed throughout the component hierarchy without passing the props down manually to each level.\
 This was done to prevent props drilling.(or moving props from grandparent to parent to child, and so on).
 * Icons used throughout the project was gotten from the react icons library.
