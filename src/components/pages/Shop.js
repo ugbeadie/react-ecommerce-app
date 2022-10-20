@@ -1,3 +1,5 @@
+import { useContext } from "react";
+import { cartContext } from "../../Context";
 import React from 'react'
 import './Shop.css'
 import products from '../Data'
@@ -5,7 +7,13 @@ import ProductCard from '../ProductCard';
 import Social from '../Social'
 import Footer from '../Footer'
 
-const Shop = ({handleAddToCart}) => {
+const Shop = () => {
+  const {cart,setCart} = useContext(cartContext)
+
+  const handleAddToCart = (product) => {
+    if (cart.indexOf(product) !== -1) return          
+    setCart([...cart, product])
+  }
   return (
     <>
     <div className='shop-header'>

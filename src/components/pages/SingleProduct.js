@@ -1,3 +1,5 @@
+import { useContext } from "react";
+import { cartContext } from "../../Context";
 import { useParams } from 'react-router-dom';
 import './SingleProduct.css'
 import products from '../Data';
@@ -5,7 +7,13 @@ import rating from '../assets/rating.jpg'
 import Social from '../Social'
 import Footer from '../Footer'
 
-const SingleProduct = ({handleAddToCart}) => {
+const SingleProduct = () => {
+  const {cart,setCart} = useContext(cartContext)
+
+  const handleAddToCart = (product) => {
+    if (cart.indexOf(product) !== -1) return          
+    setCart([...cart, product])
+  }
 
   const { productId } = useParams();
   const product = products.find((product) => product.id == productId);

@@ -1,5 +1,3 @@
-import { useContext } from "react";
-import { cartContext } from "./Context";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Topbar from './components/Topbar';
 import Navbar from './components/Navbar';
@@ -12,12 +10,6 @@ import Cart from "./components/pages/Cart";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
-  const {cart,setCart} = useContext(cartContext)
-
-  const handleAddToCart = (product) => {
-    if (cart.indexOf(product) !== -1) return          
-    setCart([...cart, product])
-  }
 
   return (
     <>
@@ -28,15 +20,9 @@ function App() {
         <div className='content'>          
           <Routes>
             <Route path='/' element={<Home/>}/>
-            <Route path='/:productId' element={<SingleProduct
-              handleAddToCart={handleAddToCart}
-            />}/>
-            <Route path='/shop' element={<Shop
-              handleAddToCart={handleAddToCart}
-            />}/>
-            <Route path='/shop/:productId' element={<SingleProduct              
-              handleAddToCart={handleAddToCart}
-            />}/>
+            <Route path='/:productId' element={<SingleProduct/>}/>
+            <Route path='/shop' element={<Shop/>}/>
+            <Route path='/shop/:productId' element={<SingleProduct/>}/>
             <Route path='/blog' element={<Blog/>}/>
             <Route path='/contact' element={<Contact/>}/>
             <Route path='/cart' element={<Cart/>}/>
