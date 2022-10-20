@@ -48,6 +48,8 @@ body {
     cursor: pointer;
 }
 
+/* NAVBAR STARTS */
+
 .navbar {
     width: 100%;
     position: absolute; 
@@ -139,6 +141,8 @@ body {
     border-radius: 10px;
 }
 
+/* HERO PAGE STARTS */
+
 .hero {
     background: url(../public/hero.jpg) no-repeat;
     background-size: cover;
@@ -192,6 +196,8 @@ body {
     background-color: var(--black);
 }
 
+/* CATEGORIES SECTION STARTS */
+
 .categories {
     position: relative;
     max-width: 100%;
@@ -239,6 +245,8 @@ figure {
     background-color: var(--blue);
     color: white;
 }
+
+/* PRODUCTS SECTION STARTS */
 
 .product-container {
     display: flex;
@@ -526,6 +534,8 @@ figure {
     opacity: 1;
 }
 
+/* COLLECTIONS SECTION STARTS */
+
 .collection-container {
     padding: 50px 20px 0 20px;
 }
@@ -617,6 +627,8 @@ figure {
 .logo img {
     width: 100%;
 }
+
+/* BLOG SECTION STARTS */
 
 .blog-container {
     padding: 70px;
@@ -710,6 +722,8 @@ figure {
     margin-left: 5px;
 }
 
+/* SOCIAL SECTION STARTS */
+
 .socials {
     width: 100%;
     display: grid;
@@ -783,6 +797,8 @@ figure {
     font-size: 13px;
     color: var(--gray);
 }
+
+/* FOOTER STARTS */
 
 .footer {
     background-color: #f5f7f9;
@@ -1048,7 +1064,6 @@ figure {
         text-align: center;
         transition: all 0.3s ease-in;
     }
-
     .collection:hover .text {
         padding: 20px;
     }
