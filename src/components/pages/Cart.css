@@ -82,6 +82,7 @@ body {
 .cart-item-info .product {
     flex: 0 0 auto;
     width: 41.66666667%;
+    padding-left: 12px;
 }
 
 .cart-item-info .cost {
@@ -105,7 +106,6 @@ body {
 .cart-box {
     width: 100%;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     padding: 15px 10px;
 }
