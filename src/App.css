@@ -48,6 +48,12 @@ body {
   cursor: pointer;
 }
 
+.toast {
+  padding: 20px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
 /* NAVBAR STARTS */
 
 .navbar {

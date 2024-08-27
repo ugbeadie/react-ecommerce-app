@@ -18,7 +18,6 @@ const SingleProduct = () => {
   return (
     <>
       <Toaster richColors position="top-right" />
-
       <section className="single-product">
         <div className="single-prod-container">
           <div className="left">
