@@ -6,6 +6,7 @@ import { Toaster } from "sonner";
 
 const ProductCard = () => {
   const { handleAddToCart, items } = useContext(shopContext);
+
   return (
     <>
       {items.map((item) => (
