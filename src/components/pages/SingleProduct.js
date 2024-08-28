@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { cartContext } from "../../Context";
+import { shopContext } from "../../Context";
 import { useParams } from "react-router-dom";
 import { Toaster } from "sonner";
 import "./SingleProduct.css";
@@ -9,7 +9,7 @@ import Social from "../Social";
 import Footer from "../Footer";
 
 const SingleProduct = () => {
-  const { handleAddToCart } = useContext(cartContext);
+  const { handleAddToCart } = useContext(shopContext);
 
   const { productId } = useParams();
   const product = products.find((product) => product.id == productId);
@@ -17,7 +17,7 @@ const SingleProduct = () => {
     product;
   return (
     <>
-      <Toaster richColors position="top-right" />
+      <Toaster richColors position="top-center" />
       <section className="single-product">
         <div className="single-prod-container">
           <div className="left">
