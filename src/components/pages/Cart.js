@@ -3,13 +3,13 @@ import { shopContext } from "../../Context";
 import { Link } from "react-router-dom";
 import { AiFillDelete } from "react-icons/ai";
 import { Toaster, toast } from "sonner";
-
+import products from "../Data";
 import "./Cart.css";
 import Social from "../Social";
 import Footer from "../Footer";
 
 const Cart = () => {
-  const { cart, setCart } = useContext(shopContext);
+  const { cart, setCart, setItems } = useContext(shopContext);
 
   const [price, setPrice] = useState(0);
 
@@ -50,7 +50,7 @@ const Cart = () => {
           <div className="empty-cart-notif">
             <p>Your Cart Is Empty</p>
             <Link className="go-shopping" to="/shop">
-              <button>Go Shopping</button>
+              <button onClick={() => setItems(products)}>Go Shopping</button>
             </Link>
           </div>
         )}
@@ -131,7 +131,10 @@ const Cart = () => {
             <div className="clear-cart" onClick={() => setCart([])}>
               <p>clear cart</p>
             </div>
-            <div className="continue-shopping">
+            <div
+              onClick={() => setItems(products)}
+              className="continue-shopping"
+            >
               <Link to="/shop">Continue shopping</Link>
             </div>
           </div>

@@ -1,9 +1,14 @@
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { shopContext } from "../Context";
 import "../App.css";
 import ProductCard from "./ProductCard";
 import FilterButtons from "./FilterButtons";
+import products from "./Data";
 
 const Products = () => {
+  const { setItems } = useContext(shopContext);
+
   return (
     <>
       <div className="products">
@@ -21,7 +26,7 @@ const Products = () => {
           </div>
           <div className="go-to-shop">
             <Link to="/shop" style={{ textDecoration: "none" }}>
-              <button>go to shop</button>
+              <button onClick={() => setItems(products)}>go to shop</button>
             </Link>
           </div>
         </div>

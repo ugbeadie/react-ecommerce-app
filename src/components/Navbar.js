@@ -4,9 +4,10 @@ import { NavLink } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import "../App.css";
+import products from "./Data";
 
 const Navbar = () => {
-  const { cart } = useContext(shopContext);
+  const { cart, setItems } = useContext(shopContext);
 
   const [nav, setNav] = useState(false);
   const [navOnScroll, setNavOnScroll] = useState(false);
@@ -31,7 +32,13 @@ const Navbar = () => {
           ugbe<span>store</span>
         </div>
         <ul className={nav ? "nav-menu active" : "nav-menu"}>
-          <li onClick={() => setNav(false)} className="nav-items">
+          <li
+            onClick={() => {
+              setNav(false);
+              setItems(products);
+            }}
+            className="nav-items"
+          >
             <NavLink
               to="/"
               className={({ isActive }) => (isActive ? "link active" : "link")}
@@ -40,7 +47,13 @@ const Navbar = () => {
             </NavLink>
           </li>
 
-          <li onClick={() => setNav(false)} className="nav-items">
+          <li
+            onClick={() => {
+              setNav(false);
+              setItems(products);
+            }}
+            className="nav-items"
+          >
             <NavLink
               to="/shop"
               className={({ isActive }) => (isActive ? "link active" : "link")}
