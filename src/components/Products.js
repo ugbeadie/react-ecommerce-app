@@ -1,8 +1,7 @@
-import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
-import products from "./Data";
 import ProductCard from "./ProductCard";
+import FilterButtons from "./FilterButtons";
 
 const Products = () => {
   return (
@@ -15,10 +14,10 @@ const Products = () => {
             </h3>
             <p>Top view this week</p>
           </div>
+
+          <FilterButtons />
           <div className="product-imgs">
-            {products.map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))}
+            <ProductCard />
           </div>
           <div className="go-to-shop">
             <Link to="/shop" style={{ textDecoration: "none" }}>

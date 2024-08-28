@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import { cartContext } from "../..//Context";
+import { shopContext } from "../../Context";
 import { Link } from "react-router-dom";
 import { AiFillDelete } from "react-icons/ai";
 import { Toaster, toast } from "sonner";
@@ -9,7 +9,7 @@ import Social from "../Social";
 import Footer from "../Footer";
 
 const Cart = () => {
-  const { cart, setCart } = useContext(cartContext);
+  const { cart, setCart } = useContext(shopContext);
 
   const [price, setPrice] = useState(0);
 
@@ -43,7 +43,7 @@ const Cart = () => {
 
   return (
     <>
-      <Toaster richColors position="top-right" />
+      <Toaster richColors position="top-center" />
       <div className="cart">
         <div className="cart-header">Shopping Cart</div>
         {cart.length === 0 && (

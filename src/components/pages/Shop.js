@@ -1,14 +1,13 @@
 import { useContext } from "react";
-import { cartContext } from "../../Context";
-import React from "react";
+import { shopContext } from "../../Context";
 import "./Shop.css";
-import products from "../Data";
+import FilterButton from "../FilterButtons";
 import ProductCard from "../ProductCard";
 import Social from "../Social";
 import Footer from "../Footer";
 
 const Shop = () => {
-  const { handleAddToCart } = useContext(cartContext);
+  const { handleAddToCart, items } = useContext(shopContext);
 
   return (
     <>
@@ -19,14 +18,9 @@ const Shop = () => {
         </h3>
         <p>Find the right fit for you</p>
       </div>
+      <FilterButton />
       <section className="shop-imgs">
-        {products.map((product) => (
-          <ProductCard
-            key={product.id}
-            product={product}
-            handleAddToCart={handleAddToCart}
-          />
-        ))}
+        <ProductCard items={items} handleAddToCart={handleAddToCart} />
       </section>
       <Social />
       <Footer />
