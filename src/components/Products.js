@@ -11,7 +11,7 @@ const Products = () => {
 
   return (
     <>
-      <div className="products">
+      <section className="products">
         <div className="product-container">
           <div className="product-head">
             <h3>
@@ -19,8 +19,9 @@ const Products = () => {
             </h3>
             <p>Top view this week</p>
           </div>
-
-          <FilterButtons />
+          <div className="filter-btn">
+            <FilterButtons />
+          </div>
           <div className="product-imgs">
             <ProductCard />
           </div>
@@ -30,7 +31,7 @@ const Products = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

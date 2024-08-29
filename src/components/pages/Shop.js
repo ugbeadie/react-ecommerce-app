@@ -18,7 +18,9 @@ const Shop = () => {
         </h3>
         <p>Find the right fit for you</p>
       </div>
-      <FilterButton />
+      <div className="filter-btn">
+        <FilterButton />
+      </div>
       <section className="shop-imgs">
         <ProductCard items={items} handleAddToCart={handleAddToCart} />
       </section>
