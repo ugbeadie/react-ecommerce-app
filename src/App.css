@@ -343,12 +343,11 @@ figure {
 }
 
 .product-imgs {
-  position: relative;
-  max-width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
-  margin-top: 50px;
+  margin-top: 20px;
+  padding: 50px 70px 70px;
 }
 
 .product-card {
@@ -359,8 +358,7 @@ figure {
 
 .product-card figure {
   position: relative;
-  top: 0;
-  width: 100%;
+  /* width: 100%; */
   height: 350px;
 }
 

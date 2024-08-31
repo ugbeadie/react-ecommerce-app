@@ -11,27 +11,23 @@ const Products = () => {
 
   return (
     <>
-      <section className="products">
-        <div className="product-container">
-          <div className="product-head">
-            <h3>
-              <span>TRENDING</span>
-            </h3>
-            <p>Top view this week</p>
-          </div>
-          <div className="filter-btn">
-            <FilterButtons />
-          </div>
-          <div className="product-imgs">
-            <ProductCard />
-          </div>
-          <div className="go-to-shop">
-            <Link to="/shop" style={{ textDecoration: "none" }}>
-              <button onClick={() => setItems(products)}>go to shop</button>
-            </Link>
-          </div>
-        </div>
-      </section>
+      <div className="product-head">
+        <h3>
+          <span>TRENDING</span>
+        </h3>
+        <p>Top view this week</p>
+      </div>
+      <div className="filter-btn">
+        <FilterButtons />
+      </div>
+      <div className="product-imgs">
+        <ProductCard />
+      </div>
+      <div className="go-to-shop">
+        <Link to="/shop" style={{ textDecoration: "none" }}>
+          <button onClick={() => setItems(products)}>go to shop</button>
+        </Link>
+      </div>
     </>
   );
 };
