@@ -12,16 +12,12 @@ const ProductCard = () => {
       {items.map((item) => (
         <div className="product-card">
           <Toaster richColors position="top-center" />
-          <Link to={`${item.id}`}>
-            <figure key={item.id}>
-              <img className="img-back" src={item.imageBack} alt={item.name} />
-              <img
-                className="img-front"
-                src={item.imageFront}
-                alt={item.name}
-              />
-            </figure>
-          </Link>
+
+          <figure key={item.id}>
+            <img className="img-back" src={item.imageBack} alt={item.name} />
+            <img className="img-front" src={item.imageFront} alt={item.name} />
+          </figure>
+
           <div class="perks">
             <span class="one">{item.perk_one}</span>
             <span class="two">{item.perk_two}</span>
