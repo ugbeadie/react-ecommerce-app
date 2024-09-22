@@ -29,7 +29,7 @@ const Navbar = () => {
       </div>
       <div className="nav-left">
         <div className="logo">
-          ugbe<span>store</span>
+          snap<span>sack</span>
         </div>
         <ul className={nav ? "nav-menu active" : "nav-menu"}>
           <li
